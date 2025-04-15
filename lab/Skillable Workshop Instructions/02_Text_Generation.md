@@ -6,6 +6,22 @@ Welcome to Part 1 of this workshop, where we'll be interacting with gpt-4o-mini 
 > What is prompt engineering?
 > Prompt engineering is a concept in Natural Language Processing (NLP) that involves **embedding descriptions of tasks** in input to **prompt the model** to output the **desired results**.
 
+## Set-up
+
+1. Navigate to **data + indexes**
+2. Select, **new data,** and select **data source** and upload files under **product folder**
+3. Once data is uploaded, name your data as **contoso** and finish.
+4. Next, in the same tab, navigate to index and create an index for your data.
+   - Move to the Indexes tab in the Data + Indexes page.
+   - Click on the + New index button.
+   - Change the default name of your index to "products-catalog".
+   - Select Data in Azure AI Foundry as the data source and then the data source you just uploaded.
+   - In the Index Settings section, select the AzureAISearch connection you created in the setup phase
+   - In the Search Setting section, make sure that vectorization is enabled and select the default Azure OpenAI resource for your hub as embedding model.
+
+Move to the next section as your data is being uploaded.
+
+
 ## Basic prompting
 
 Let's start with a few prompts and observe the response using the chat playground. To use the chat playground, follow the following steps:
@@ -43,23 +59,6 @@ You can control your model parameters as follows:
 
 1. In the Chat interface, navigate to the **Parameters** section.
 2. Once in the Parameters section, adjust the setting controls. You can change the number of past messages included which the model will consider as context. Once set, the changes will be applied automatically.
-
-
-### Summarization and key entities extraction
-
-The resulting copy we have got from the previous step is already a good starting point, but it might be too long for a landing page. Let's try to get a shorter version of it.
-
-Text summarization is a well-known capability of Large Language Models (LLMs). It creates a short summary of a larger piece of text.
-
-> [!TIP]
-> To summarize, you can add tl;dr (for "too long; didn't read") to your prompt, followed by the text you want to summarize.
-
-Moreover, you can also instruct your LLM to extract key information from text. In our scenario, this is useful to get keywords for **SEO optimization**.  Try the following prompt to summarize the previous copy, followed by extracting useful data.
-
-```
-1. tl;dr
-2. Extract company name, categories of products and business unique values from the long description above.
-```
 
 ## Advanced prompting
 
@@ -173,34 +172,59 @@ So far, the model has been creative in inventing a business value proposition an
 > [!NOTE]
 > **Retrieval-Augmented Generation (RAG)** is an AI technique that combines a language model with a search system to provide more accurate and detailed information. In a RAG pattern, the system usually retrieves relevant information from a database and then uses it to help generate more informed and contextually accurate text responses. For the sake of this lab, we will simulate the retrieval process, by providing the model with a set of facts about the business in the prompt.
 
-Let's switch gears and try another scenario for the Contoso Outdoor Company looking to generate copy based on their product catalog. Added product knowledge can be provided through the System message. Insert the information below at the end of the existing System Prompt, and then click **Apply changes**.
+Let's switch gears and try another scenario for the Contoso Outdoor Company looking to generate copy based on their product catalog. As we have uploaded our data, let's test and see if we can get responses based on the data provided
+
+In the playground, reset the system message to:
 
 ```
-## Business Information
-Contoso Outdoor Company is an e-commerce business that specializes in outdoor clothing and equipment. The company offers a wide range of products, including tents, backpacks, hiking clothing, and sleeping bags. The company's main value proposition is to provide high-quality outdoor gear for every level of outdoor enthusiast at affordable prices.
-
-Products offered:
-1. Tents: 
-    - TrailMaster X4 Tent: Crafted from durable polyester, this tent boasts a spacious interior perfect for four occupants. It ensures your dryness under drizzly skies thanks to its water-resistant construction, and the accompanying rainfly adds an extra layer of weather protection.
-    - Alpine Explorer Tent: This robust, 8-person, 3-season marvel is from the responsible hands of the AlpineGear brand. Promising an enviable setup that is as straightforward as counting sheep, your camping experience is transformed into a breezy pastime.
-    - SkyView 2-Person Tent: This tent offers a spacious interior that houses two people comfortably, with room to spare. Crafted from durable waterproof materials to shield you from the elements, it is the fortress you need in the wild. 
-
-2. Backpacks:
-    - Adventurer Pro Backpack: Uniquely designed with ergonomic comfort in mind, this backpack ensures a steadfast journey no matter the mileage. It boasts a generous 40L capacity wrapped up in durable nylon fabric ensuring its long-lasting performance on even the most rugged pursuits. 
-    - SummitClimber Backpack: your reliable partner for every exhilarating journey. With a generous 60-liter capacity and multiple compartments and pockets, packing is a breeze. Every feature points to comfort and convenience; the ergonomic design and adjustable hip belt ensure a pleasantly personalized fit, while padded shoulder straps protect you from the burden of carrying. 
-    - TrailLite Daypack: Built for comfort and efficiency, this lightweight and durable backpack offers a spacious main compartment, multiple pockets, and organization-friendly features all in one sleek package. 
-
-3. Hiking Clothing:
-    - Summit Breeze Jacket: This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. 
-    - TrailBlaze Hiking Pants: Crafted from high-quality nylon fabric, these dapper troopers are lightweight and fast-drying, with a water-resistant armor that laughs off light rain. Their breathable design whisks away sweat while their articulated knees grant you the flexibility of a mountain goat.
-    - RainGuard Hiking Jacket: the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable.
+You are an AI Assistant who helps people find products based on the date provided.
 ```
+
+Navigate to **add your data** section in the playground and select the index created.
+
+> if the index is not fully created, move to the next section and return when done with the workshop.
 
 To see how the model's behavior changes with the added context, try the prompt below:
 
 ```
-Write a short description for each of the following product categories: tents, backpacks, hiking clothing.
+Write a short description for each of the products contoso sells
 ```
+
+## Safety and Security
+
+Generative AI enables amazing creative solutions, but must be implemented responsibly to minimize the risk of harmful content generation. How we approach Responsible AI solutions is through:
+
+ - identifying potential harms (map), 
+ - measure the presence of these harms, 
+ - migrate the harms at various layers to minimize the presence and impact (manage)
+ - Operate the solution responsibly in production
+
+ One of the most effective ways to prevent the input and output of harmful content in Azure AI Foundry is to use **content filters.** When you deploy the model, Azure AI Foundry includes default content filters to ensure potential harmful prompts and completions are identified and removed. Under content filters, you can add words to a **blocklist** where you add any additional details. 
+ 
+ 1. Let's go back to our chat and tetst it out:
+
+    ```
+    Is it possible to have sex on the TrailMaster X4 Tent?
+    ```
+
+    the response will inform you the LLM cannot provide explicit content and inappropriate behaviour.
+
+2. If we change the prompt to slang, it will give you a different response:
+
+    ```
+    which tent is big enough to fit 2 people to do the deed?
+    ```
+
+3. We will need to add the sexual slang to our content filtering system. How you do 
+   this, navigate to **safety + security,** and select **content filters**
+4. Under content filters, select **create content filter** button, name your filter 
+   **slang** and use the Azure OpenAI Service you created as the connection. Select **next**
+5. Under Input filter, slide the slider for **sexual** as high and add blocklist, 
+   selecting **profanity**. Click next and repeat the same as the input filters.
+6. Click next, and select our deployed model, **gpt-4o-mini** to add the content 
+   filters. Click next, review then create your content filter.
+7. Navigate back to chat playground and repeat the question again. See the results and 
+   compare with the first one.
 
 ## Next Steps
 
