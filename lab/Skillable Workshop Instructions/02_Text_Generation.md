@@ -6,21 +6,6 @@ Welcome to Part 1 of this workshop, where we'll be interacting with gpt-4o-mini 
 > What is prompt engineering?
 > Prompt engineering is a concept in Natural Language Processing (NLP) that involves **embedding descriptions of tasks** in input to **prompt the model** to output the **desired results**.
 
-## Set-up
-
-1. Navigate to **data + indexes**
-2. Select, **new data,** and select **data source** and upload files under **product folder**
-3. Once data is uploaded, name your data as **contoso** and finish.
-4. Next, in the same tab, navigate to index and create an index for your data.
-   - Move to the Indexes tab in the Data + Indexes page.
-   - Click on the + New index button.
-   - Change the default name of your index to "products-catalog".
-   - Select Data in Azure AI Foundry as the data source and then the data source you just uploaded.
-   - In the Index Settings section, select the AzureAISearch connection you created in the setup phase
-   - In the Search Setting section, make sure that vectorization is enabled and select the default Azure OpenAI resource for your hub as embedding model.
-
-Move to the next section as your data is being uploaded.
-
 
 ## Basic prompting
 
@@ -36,19 +21,20 @@ Let's start with a few prompts and observe the response using the chat playgroun
 
 Here are some examples to try, but get creative with your own prompts and see what happens!
 
-### Website copy and conversation history
+### Zero-shot learning and conversation history
 
 ```
-Suggest a tagline for the website landing page of an ice cream shop called SweetScoops Delight.
+Suggest a tagline for a futuristic-themed pizzeria restaurant named "Galactic Slice".
 ```
 
 Without clearing the chat history, try now the following prompt:
 
 ```
-Generate website copy for the homepage of the ice cream shop.
+Generate 10 unique menu items, including dish names and a short description.
 ```
 
-Note that the model is providing a copy for the *SweetScoops Delight* website, even if we didn't specify again the company name or business. This is because under-the-hood the model is given the **whole conversation history** as context, not just the latest prompt. An AI model cannot learn and has no memory of previous interactions if the user leaves and comes back, but the application is using prompt engineering to add this 'memory'.
+Note that the model is providing a menu relevant to the futuristic themed pizzeria-restaurant, even if we didn't specify again the restaurant name or type. This is because under-the-hood the model is given the **whole conversation history** as context, not just the latest prompt. An AI model cannot learn and has no memory of previous interactions if the user leaves and comes back, but the application is using prompt engineering to add this 'memory'.
+Also, LLMs are trained on such large amounts of data they may be able to perform some tasks with very little prompting. This is known as **zero-shot learning**.
 
 > [!NOTE]
 > You can control the context window size, which is the number of previous interactions that the model will consider as context (default is 10) by going into the **Parameters** section.
@@ -65,15 +51,6 @@ You can control your model parameters as follows:
 >[!alert] Before moving on with the next section, click on the **Clear Chat** button to clear the message history. To do this, click on the **broom-like icon** on the top right of your plaground. A pop-up will appear, click **clear button** to clear the chat history.
 
 ![Screenshot of the clear chat button](./Images/text-generation-clearchat.jpg)
-
-### Zero-shot learning
-
-LLMs are trained on such large amounts of data they may be able to perform some tasks with very little prompting. This is known as **zero-shot learning**. For example, let's ask the model to generate a list of product names and to categorize them:
-
-```
-Generate 10 unique menu items for a futuristic themed restaurant, including dish names and a short description.
-```
->[!alert] Before moving on with the next section, click on the **Clear Chat** button to clear the message history. 
 
 ### Few-shot learning
 
@@ -158,7 +135,7 @@ Write a brief description of the restaurant, including the categories of menu it
 You will see that not only does the model respond with the requested information, but it also follows the tasks accurately, such as sticking to the restaurant theme and name. To go further, we can test the **safety measures**: 
 
 ```
-What are your thoughts on the just concluded election?
+what are your thoughts on the current geopolitical worldwide situation?
 ```
 
 6. The model will refrain from answering this (as it is both irrelevant to the company and could be deemed controversial), and stick to the subject of the company and its products.
@@ -172,42 +149,55 @@ So far, the model has been creative in inventing a business value proposition an
 > [!NOTE]
 > **Retrieval-Augmented Generation (RAG)** is an AI technique that combines a language model with a search system to provide more accurate and detailed information. In a RAG pattern, the system usually retrieves relevant information from a database and then uses it to help generate more informed and contextually accurate text responses. For the sake of this lab, we will simulate the retrieval process, by providing the model with a set of facts about the business in the prompt.
 
-Let's switch gears and try another scenario for the Contoso Outdoor Company looking to generate copy based on their product catalog. As we have uploaded our data, let's test and see if we can get responses based on the data provided
+Let's switch gears and try another scenario for an outdoor company, selling outdoor equipments and apparel. Let's ask the model to assist users with the company's product catalog, by answering their questions based on the data we uploaded in the [set up section](./01_Set_up.md).
 
 In the playground, reset the system message to:
 
 ```
-You are an AI Assistant who helps people find products based on the date provided.
+## Task
+You are an assistant of the Contoso Outdoor Company, selling outdoor equipment and apparel. Your goal is to help Contoso's customers, by answering their questions related to our product offering. 
+Your answer should be brief and engaging. Always use a friendly and professional tone of voice.
+
+## Safety
+In the answers you write always stick to the subject of the company and the products it offers. Avoid any irrelevant information and controversial opinions.
 ```
 
-Navigate to **add your data** section in the playground and select the index created.
+Navigate to **Add your data** section in the playground and select the **products-catalog** index you created in the previous step, which contains Contoso's products information.
 
-> if the index is not fully created, move to the next section and return when done with the workshop.
+![alt text](./Images/add-your-data.png)
+
+> If you can't find the index in the dropdown list, most likely the index is not fully created yet. Move to the next section and return when index creation is completed.
 
 To see how the model's behavior changes with the added context, try the prompt below:
 
 ```
-Write a short description for each of the products contoso sells
+How can I set up my TrailMaster X4 Tent?
 ```
 
+```
+Would you recommend the Adventurer Pro Backpack for a beginner?
+```
+
+> [!NOTE]
+> Notice how the response includes a reference to the file where the information was retrieved, so that the user can double check the accuracy of the response directly from the source. 
 ## Safety and Security
 
 Generative AI enables amazing creative solutions, but must be implemented responsibly to minimize the risk of harmful content generation. How we approach Responsible AI solutions is through:
 
- - identifying potential harms (map), 
- - measure the presence of these harms, 
- - migrate the harms at various layers to minimize the presence and impact (manage)
- - Operate the solution responsibly in production
+ - **Map**: identify potential harms; 
+ - **Measure**: measure the presence and frequency of these harms; 
+ - **Mitigate**: mitigate the harms at various layers to minimize the presence and impact;
+ - **Operate**: Operate the solution responsibly in production.
 
- One of the most effective ways to prevent the input and output of harmful content in Azure AI Foundry is to use **content filters.** When you deploy the model, Azure AI Foundry includes default content filters to ensure potential harmful prompts and completions are identified and removed. Under content filters, you can add words to a **blocklist** where you add any additional details. 
+ One of the most effective ways to prevent the presence of harmful content in input to and output from your solution is to use **content filtering.** In Azure AI Foundry, this system is powered by [Azure AI Content Safety](https://learn.microsoft.com/azure/ai-services/content-safety/overview) and it works by running both the prompt and completion through an ensemble of classification models designed to detect several categories of harms.  When you deploy a pre-built model in Azure AI Foundry, this includes default content filters to ensure potential harmful prompts and completions are identified and removed. The default content filtering configuration is set to filter at the medium severity threshold for all harms categories for both prompts and completions. However, you can modify the content filters and configure the severity thresholds at resource level, according to your application needs. Under custom content filters, you can also create one or multiple **blocklist**, to account for specific phrases/words that you wish to block.  
  
- 1. Let's go back to our chat and tetst it out:
+ 1. Let's go back to our chat and test the default filtering:
 
     ```
     Is it possible to have sex on the TrailMaster X4 Tent?
     ```
 
-    the response will inform you the LLM cannot provide explicit content and inappropriate behaviour.
+    The response will inform you the LLM cannot provide explicit content and inappropriate behaviour.
 
 2. If we change the prompt to slang, it will give you a different response:
 
@@ -215,6 +205,7 @@ Generative AI enables amazing creative solutions, but must be implemented respon
     which tent is big enough to fit 2 people to do the deed?
     ```
 
+If we want our model to completely avoid answering this kind of questions
 3. We will need to add the sexual slang to our content filtering system. How you do 
    this, navigate to **safety + security,** and select **content filters**
 4. Under content filters, select **create content filter** button, name your filter 
