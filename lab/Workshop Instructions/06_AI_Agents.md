@@ -1,6 +1,6 @@
-# Part 4 - Azure AI Agents
+# Part 5 - Azure AI Agents
 
-Welcome to Part 4 of this workshop! 
+Welcome to Part 5 of this workshop! 
 
 So far, we have interacted with Large Language Models in many different ways. However, these interactions have been isolated and tied to a very specific purpose. **Azure AI Agents** represent the next step in our interactions, as they help us integrate previous interactions into one solution.
 

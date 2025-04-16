@@ -1,6 +1,6 @@
-# Part X - Reasoning Models
+# Part 2 - Reasoning Models
 
-So far, we have been able to use large language models (LLMs) to generate text, images, and even a combination of both. But what would happen if we asked these models to solve a logic puzzle or perform a mathematical operation to address a problem? We might get lucky if the model's training data happened to include a solution to a similar problem, but once we attempt to ask clarifying questions or present a problem the model hasn’t been explicitly trained on, it’s unlikely we’ll arrive at an accurate solution. Standard LLMs are not designed to tackle these types of problems. **This is where reasoning models come into play.**
+So far, we have been able to use large language models (LLMs) to generate text and establish conversation. But what would happen if we asked these models to solve a logic puzzle or perform a mathematical operation to address a problem? We might get lucky if the model's training data happened to include a solution to a similar problem, but once we attempt to ask clarifying questions or present a problem the model hasn’t been explicitly trained on, it’s unlikely we’ll arrive at an accurate solution. Standard LLMs are not designed to tackle these types of problems. **This is where reasoning models come into play.**
 
 Reasoning models can reach higher levels of performance in domains like math, coding, science, strategy, and logistics. The way these models produces outputs is by explicitly using chain of thought to explore all possible paths before generating an answer. They verify their answers as they produce them which helps them to arrive to better more accurate conclusions. This means that reasoning models may require less context in prompting in order to produce effective results.
 
@@ -154,6 +154,6 @@ All values should come in as parameters to the function, such that in any other 
 
 ## Next Steps
 
-Congratulations! This marks the end of the **reasoning models** section. 
+Congratulations! You have completed the second part of this workshop, and have experimented with reasoning models.
 
-Click **Next** to proceed to the *section_here* section.
+Click **Next** to proceed to the Image Generation section.
