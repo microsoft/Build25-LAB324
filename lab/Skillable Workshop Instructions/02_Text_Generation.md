@@ -163,8 +163,8 @@ In the answers you write always stick to the subject of the company and the prod
 ```
 
 Navigate to **Add your data** section in the playground and select the **products-catalog** index you created in the previous step, which contains Contoso's products information.
+![Add your data](./Images/add-your-data.png)
 
-![alt text](./Images/add-your-data.png)
 
 > If you can't find the index in the dropdown list, most likely the index is not fully created yet. Move to the next section and return when index creation is completed.
 
