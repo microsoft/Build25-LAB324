@@ -1,7 +1,7 @@
 # Get started
 
 > [!TIP]
-> What is **Azure Azure AI Foundry**? Azure AI Foundry is the ultimate platform for innovators to create the future. It offers a comprehensive suite of Azure AI capabilities and tools to design, customize, and manage AI applications and agents. It's seamlessly integrated with the world's most loved developer tools, including GitHub, Visual Studio, and Copilot Studio. Azure AI Foundry empowers developers and IT admins to bring their AI visions to life with ease and efficiency.
+> What is **Azure Azure AI Foundry**? Azure AI Foundry is the ultimate platform for innovators to create generative AI solution. It offers a comprehensive suite of Azure AI capabilities and tools to design, customize, and manage AI applications and agents. It's seamlessly integrated with the world's most loved developer tools, including GitHub, Visual Studio, and Copilot Studio. Azure AI Foundry empowers developers and IT admins to bring their AI visions to life with ease and efficiency.
 
 ## Sign in to Windows
 As a first step, login into the lab Virtual Machine using the following credentials:
@@ -31,6 +31,14 @@ In this workshop we will be working on Azure AI Foundry portal, focusing especia
 
 ![Hub management tab](./Images/aifoundry-hub-navigation.jpeg)
 
+> [!NOTE]
+> For the sake of this workshop an AI project with its related assets has been created for you, so you can focus on usage. Here's a list of resources that have > been pre-provisioned in the workshop environment:
+> - Azure AI Hub, which is your workspace in Azure AI Foundry and a container of projects. it comes with an Azure Key Vault and an Azure Sotrage 
+> Accountattached to store secrets and data.
+> - Azure AI Project, which encapsulates the tools and assets used to create a specific AI solution
+> - Azure AI Services, which provides access to generative AI models 
+> - Azure AI Search, which enables advanced search capabilities
+
 ## Project
 
 ![project overview tab](./Images/aifoundry-project-overview.jpeg)
@@ -56,7 +64,23 @@ We have two new sections:
 1. **My assets**: Here you can add additional elements to the project, with resources such as _Data_, _Indexes_, _models and endpoints_ and _Web apps_ to be used as part of your work.
 1. **Management Center:** a location to manage all you  hub and project details and resources.
 
-For this lab we will focus on using the **Playgrounds**, navigate to the Playgrounds and move on to the next section.
+## Data and indexes
+
+In this lab we are going to provide models access to a set of private data, to test its capabilities to ground responses on it. In this step, let's add this data in our Azure AI project. 
+
+1. Navigate to **Data + Indexes**
+2. Select, **New data,** and select **Upload files/folders** as **Data source**
+3. Open the **Upload files or folder** dropdown, select **Upload folder** and upload the files hosted in the **product_catalog** folder on Desktop. If you can't find the folder on the VM, you can also download files [from this repo](./assets/product_catalog/).
+4. Once data is uploaded, name your data as **contoso-products** and finish.
+5. Next, in the same tab, navigate to index and create an index for your data.
+   - Move to the **Indexes** tab in the Data + Indexes page.
+   - Click on the **+ New index** button.
+   - Change the default name of your index to **products-catalog**.
+   - Select **Data in Azure AI Foundry** as the data source and then the data source you just uploaded.
+   - In the **Index Settings** section, select the Azure AI Search connection that has been pre-provisioned for this project.
+   - In the **Search Settings** section, make sure that vectorization is enabled and select the default Azure OpenAI resource for your hub as embedding model.
+
+Move to the next section as your data is being uploaded.
 
 ## Playgrounds
 
