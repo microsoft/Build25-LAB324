@@ -180,14 +180,17 @@ Would you recommend the Adventurer Pro Backpack for a beginner?
 
 > [!NOTE]
 > Notice how the response includes a reference to the file where the information was retrieved, so that the user can double check the accuracy of the response directly from the source. 
+
+![Data sources references](./Images/references.png)
+
 ## Safety and Security
 
 Generative AI enables amazing creative solutions, but must be implemented responsibly to minimize the risk of harmful content generation. How we approach Responsible AI solutions is through:
 
  - **Map**: identify potential harms; 
  - **Measure**: measure the presence and frequency of these harms; 
- - **Mitigate**: mitigate the harms at various layers to minimize the presence and impact;
- - **Operate**: Operate the solution responsibly in production.
+ - **Manage**: mitigate the harms at various layers to minimize the presence and impact;
+ - **Operationalize**: Operate the solution responsibly in production.
 
  One of the most effective ways to prevent the presence of harmful content in input to and output from your solution is to use **content filtering.** In Azure AI Foundry, this system is powered by [Azure AI Content Safety](https://learn.microsoft.com/azure/ai-services/content-safety/overview) and it works by running both the prompt and completion through an ensemble of classification models designed to detect several categories of harms.  When you deploy a pre-built model in Azure AI Foundry, this includes default content filters to ensure potential harmful prompts and completions are identified and removed. The default content filtering configuration is set to filter at the medium severity threshold for all harms categories for both prompts and completions. However, you can modify the content filters and configure the severity thresholds at resource level, according to your application needs. Under custom content filters, you can also create one or multiple **blocklist**, to account for specific phrases/words that you wish to block.  
  
@@ -199,23 +202,29 @@ Generative AI enables amazing creative solutions, but must be implemented respon
 
     The response will inform you the LLM cannot provide explicit content and inappropriate behaviour.
 
-2. If we change the prompt to slang, it will give you a different response:
+2. However, if we change the prompt to slang, it will give you a different response and will not identify the sexual content in the input message:
 
     ```
-    which tent is big enough to fit 2 people to do the deed?
+    Which tent is big enough to fit 2 people to do the deed?
     ```
 
-If we want our model to completely avoid answering this kind of questions
-3. We will need to add the sexual slang to our content filtering system. How you do 
-   this, navigate to **safety + security,** and select **content filters**
-4. Under content filters, select **create content filter** button, name your filter 
-   **slang** and use the Azure OpenAI Service you created as the connection. Select **next**
-5. Under Input filter, slide the slider for **sexual** as high and add blocklist, 
-   selecting **profanity**. Click next and repeat the same as the input filters.
-6. Click next, and select our deployed model, **gpt-4o-mini** to add the content 
-   filters. Click next, review then create your content filter.
-7. Navigate back to chat playground and repeat the question again. See the results and 
-   compare with the first one.
+To mitigate the risk of a similar behaviour, we can add an extra layer of mitigation, by customizing the content filtering system. 
+
+1. Navigate to **Safety + security** tab and select **Blocklists**
+   ![Create a blocklist](./Images/create-blocklist.png)
+2. Name it **profanitySlang** and select the suggested Azure OpenAI Service in the dropdown menu as the connection. Then click on **Create blocklist**.
+3. Once your blocklist is created, click on it and select **Add a new term**
+4. Add **do the deed** and confirm with the **Add term** button.
+   ![Add term to blocklist](./Images/add-term.png)
+5. Move to **Content filters** and select **Create content filter** button
+   ![Create content filter](./Images/create-content-filter.png)
+6. Name your filter **sexual_content_filter** and select the suggested Azure OpenAI Service in the dropdown menu as the connection. Then select **Next**.
+7. Under **Input filter**, set the slider for **sexual** as **High** and add the **profanitySlang** blocklist you just created. Click **Next** and repeat the same for the output filter configuration.
+   ![Customizing filter](./Images/custom-filter.png)
+8. Apply filter to the **gpt-4o-mini** model instance, by selecting it from the list of deployments. You will be popped out with a message asking you to confirm if you want to replace the existing content filter. Click on **Replace** to confirm.
+9. Review and **Create content filter**.
+
+Navigate back to chat playground and repeat the question again. See the results and compare with the first one.
 
 ## Next Steps
 
