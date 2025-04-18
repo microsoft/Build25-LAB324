@@ -1,6 +1,6 @@
 # Part 2: Image Generation
 
-Welcome to part 2 of this workshop, where we will interact with a text-to-image model, DALL-E 3. 
+Welcome to part 3 of this workshop, where we will interact with a text-to-image model, DALL-E 3. 
 
 > [!TIP]
 > What is DALL-E 3? DALL-E 3 is a neural network based model that can generate graphical data from **natural language input**. Put more simply, you can provide DALL-E 3 with a **description** and it can generate an appropriate image.
@@ -136,6 +136,6 @@ Beyond its aesthetic appeal, the 3D Animated Office Space Design is designed wit
 
 ## Next steps
 
-Congratulations! You have now completed the second part of the lab, and have generated different image assets. In the next part of the lab, you will learn how to use the model for multimodal requests.
+Congratulations! You have now completed the third part of the lab, and have generated different image assets. In the next part of the lab, you will learn how to use the model for multimodal requests.
 
 Click **Next** to proceed to the Multimodality section.
