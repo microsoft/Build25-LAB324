@@ -138,4 +138,4 @@ Beyond its aesthetic appeal, the 3D Animated Office Space Design is designed wit
 
 Congratulations! You have now completed the third part of the lab, and have generated the necessary image assets for the Contoso Outdoors Company e-commerce website. In the next part of the lab, you will learn how to use the model for multimodal requests.
 
-Move to [Part 3: Multimodality](./04_Multimodal_Interfaces.md)
+Move to [Part 4: Multimodality](./05_Multimodal_Interfaces.md)

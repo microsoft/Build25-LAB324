@@ -204,6 +204,6 @@ Write a short description for each of the following product categories: tents, b
 
 ## Next Steps
 
-Congratulations, you have completed the first part of the lab! You have learned how to use prompt engineering to generate text using a language model. In the next part of the lab, you will learn how to use the model to generate image assets.
+Congratulations, you have completed the first part of the lab! You have learned how to use prompt engineering to generate text using a language model. In the next part of the lab, you will learn how to use reasoning models to solve complex problems.
 
-Move to [Part 2: Image Generation](./03_Image_Generation.md)
+Move to [Part 2: Reasoning Models](./03_Reasoning_Models.md)

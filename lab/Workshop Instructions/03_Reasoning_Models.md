@@ -154,6 +154,6 @@ All values should come in as parameters to the function, such that in any other 
 
 ## Next Steps
 
-Congratulations! You have completed the second part of this workshop, and have experimented with reasoning models.
+Congratulations! You have completed the second part of this workshop, and have experimented with reasoning models. You will now learn how to prompt models to generate images.
 
-Click **Next** to proceed to the Image Generation section.
+Move to [Part 4: Image Generation](./04_Image_Generation.md)

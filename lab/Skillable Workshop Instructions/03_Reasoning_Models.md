@@ -16,9 +16,10 @@ Both of these completions count towards content generated from the model and hen
 ### Reasoning Models Available
 
 - `o3-mini`
-- `DeepSeek-R1`
+- `o3`
+- `o4-mini`
 
-
+We will be working with `o4-mini` for this section.
 
 ## Interacting with Reasoning Models
 
@@ -27,9 +28,9 @@ Both of these completions count towards content generated from the model and hen
 >[!alert] Before you start, click on **Clear Chat** to avoid any context from previous interactions.
 
 
-2. Select `o3-mini` under the Deployment section.
+2. Select `o4-mini` under the Deployment section.
 
-![Selecting a reasoning model from deployments]()
+![Selecting a reasoning model from deployments](./Images/aifoundry-reasoning-modelselect.png)
 
 ### **Math**:
 
@@ -82,7 +83,7 @@ Again, the model is able to reason appropriately and come to the solution accura
 
 As mentioned before, one of the areas where reasoning models excel is at dealing with code. 
 
-1. We have all run into code that may be a bit hard to understand at first glance. Especially if we do not have context around it. Let's test `o3-mini` out with this piece of uncommented code, with ambiguous variable names:
+1. We have all run into code that may be a bit hard to understand at first glance. Especially if we do not have context around it. Let's test `o4-mini` out with this piece of uncommented code, with ambiguous variable names:
 
 ```
 Explain what the following code piece is doing:
@@ -103,11 +104,13 @@ print("Result:", x)
 In what scenario would this code piece be useful? Rewrite it for clarity and ease of understanding in the future.
 ```
 
-3. What if we had to face code in a programming language we are not familiar with? `o3-mini` and other reasoning models are able to convert a piece of code from one language to another. 
+3. What if we had to face code in a programming language we are not familiar with? `o4-mini` and other reasoning models are able to convert a piece of code from one language to another. 
 
 Let's try converting this piece of Go code into C#:
 
+
 ```Go
+Convert the following to C#:
 package main
 
 import "fmt"
@@ -146,6 +149,8 @@ Try converting to other languages too! (Maybe one you are most familiar with, if
 
 4. Lastly, let's convert our past rate-of-change problem to a program that is able to solve them. 
 
+>[!note] Click on **Clear Chat** to avoid any context from previous interactions.
+
 ```
 Write a Python program that is able to solve problems such as the following: 
 A tank of water in the shape of a cone is being filled with water at a rate of 10 m3/sec. The base radius of the tank is 34 meters and the height of the tank is 10 meters. At what rate is the depth of the water in the tank changing when the radius of the top of the water is 10 meters? 
@@ -154,6 +159,6 @@ All values should come in as parameters to the function, such that in any other 
 
 ## Next Steps
 
-Congratulations! You have completed the second part of this workshop, and have experimented with reasoning models.
+Congratulations! You have completed the second part of this workshop, and have experimented with reasoning models. In the next part of the lab, you will learn how to use the model to generate image assets.
 
 Click **Next** to proceed to the Image Generation section.
