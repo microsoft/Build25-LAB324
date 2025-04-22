@@ -11,7 +11,7 @@ Reasoning models then produce two types of outputs:
 - Reasoning completions
 - Output completions
 
-Both of these completions count towards content generated from the model and hence, towards the token limits and costs associated with the model. Some models may output the reasoning content, like DeepSeek-R1 and o4-mini. Some others, like o1, only output the output piece of the completions.
+Both of these completions count towards content generated from the model and hence, towards the token limits and costs associated with the model. Some models may output the reasoning content, like DeepSeek-R1 and o4-mini. Some others, like o1, only output the final result of the completions.
 
 ### Reasoning Models Available in Azure AI Foundry's Model Catalog
 
