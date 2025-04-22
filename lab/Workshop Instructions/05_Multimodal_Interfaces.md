@@ -1,4 +1,4 @@
-# Part 3 - Multimodal
+# Part 4 - Multimodal
 
 Until now, we have interacted with LLMs using a single modality: inputting text and receiving either text or images. However, multimodal interfaces are becoming increasingly popular because they allow users to interact with models using multiple modalities, such as text, images, and speech, thereby improving human-computer interactions. In this section, we will explore how to use multimodal interfaces to interact with **GPT-4o mini** and **GPT-4o audio**.
 
@@ -87,6 +87,6 @@ By integrating the **gpt-4o-realtime-preview** model, users can interact with th
 
 ## Next Steps
 
-Congratulations! You have now completed the 3rd part of the lab and you learnt how to interact with multimodal models. 
+Congratulations! You have now completed the fourth part of the lab and you learnt how to interact with multimodal models. 
 
-Move to [Part 4: Azure AI Agents](./05_AI_Agents.md)
+Move to [Part 5: Azure AI Agents](./06_AI_Agents.md)

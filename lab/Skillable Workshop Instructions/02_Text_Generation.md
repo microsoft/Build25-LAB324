@@ -228,6 +228,6 @@ Navigate back to chat playground and repeat the question again. See the results 
 
 ## Next Steps
 
-Congratulations, you have completed the first part of the lab! You have learned how to use prompt engineering to generate text using a language model. In the next part of the lab, you will learn how to use the model to generate image assets.
+Congratulations, you have completed the first part of the lab! You have learned how to use prompt engineering to generate text using a language model. In the next part you will learn how to use reasoning models for more complex problems.
 
-Click **Next** to advance to the Image section.
+Click **Next** to advance to the Reasoning models section.
