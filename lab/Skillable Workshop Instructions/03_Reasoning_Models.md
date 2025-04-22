@@ -11,10 +11,12 @@ Reasoning models then produce two types of outputs:
 - Reasoning completions
 - Output completions
 
-Both of these completions count towards content generated from the model and hence, towards the token limits and costs associated with the model. Some models may output the reasoning content, like DeepSeek-R1. Some others, like o1, only outputs the output piece of the completions.
+Both of these completions count towards content generated from the model and hence, towards the token limits and costs associated with the model. Some models may output the reasoning content, like DeepSeek-R1 and o4-mini. Some others, like o1, only output the output piece of the completions.
 
-### Reasoning Models Available
+### Reasoning Models Available in Azure AI Foundry's Model Catalog
 
+- `o1`
+- `DeepSeek-R1`
 - `o3-mini`
 - `o3`
 - `o4-mini`
@@ -31,6 +33,10 @@ We will be working with `o4-mini` for this section.
 2. Select `o4-mini` under the Deployment section.
 
 ![Selecting a reasoning model from deployments](./Images/aifoundry-reasoning-modelselect.png)
+
+3. In the box that reads **Give the model instructions and context**, type in the following System Message:
+
+`You are an AI that assists with solving complex problems, clearly showcasing the steps to reach a solution.`
 
 ### **Math**:
 
