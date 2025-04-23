@@ -13,7 +13,7 @@ By the end of this workshop, you should be able to:
 
 ## Lab Outline
 
-The lab is organized into 5 sections, taking you through generating text content, tackling complex problems, image assets, and code snippets through a multimodal conversational interface on Azure with OpenAI models. In addition, we will cover AI Assistants. The goal of the lab is to leverage generative AI capabilities over a wide range of scenarios.
+The lab is organized into 5 sections, taking you through generating text content, tackling complex problems, creating image assets, and code snippets through a multimodal conversational interface on Azure with OpenAI models. In addition, we will cover AI Assistants. The goal of the lab is to leverage generative AI capabilities over a wide range of scenarios.
 
 1. **Part 1 - Text Generation** Generate text content and descriptions with GPT4o
 2. **Part 2 - Reasoning Models** Solve complex problems including math, logic and code
