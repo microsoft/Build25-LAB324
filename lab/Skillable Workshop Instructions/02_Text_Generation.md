@@ -41,7 +41,7 @@ Also, LLMs are trained on such large amounts of data they may be able to perform
 
 You can control your model parameters as follows:
 
-![image showing parameters tab](./Images/aifoundry-chat-parameters.jpeg)
+![image showing parameters tab](./Images/aifoundry-chat-parameters.jpg)
 
 1. In the Chat interface, navigate to the **Parameters** section.
 2. Once in the Parameters section, adjust the setting controls. You can change the number of past messages included which the model will consider as context. Once set, the changes will be applied automatically.
@@ -101,7 +101,7 @@ Take a step-by-step approach in your response: Start by thinking about the theme
 > [!TIP]
 > What is the **system message**? The system message is used to communicate instructions or provide context to the model at the beginning of a conversation. It is displayed in a different format compared to user messages, helping the model understand its role in the conversation. The system message typically guides the model's behavior, sets the tone, or specifies desired output from the model. By utilizing the system message effectively, users can steer the model towards generating more accurate and relevant responses.
 
-![image showing system message tab](./Images/aifoundry-chat-instructions.jpeg)
+![image showing system message tab](./Images/aifoundry-chat-instructions.jpg)
 
 Update the System Message to give the model instructions and context as follows:
 

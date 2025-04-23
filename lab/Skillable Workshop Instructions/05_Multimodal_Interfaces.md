@@ -77,7 +77,7 @@ By integrating the **gpt-4o-realtime-preview** model, users can interact with th
 
 3. In the playground, click **enable microphone,** a pop up will appear, click allow to enable interactions with audio.
 
-![enable audio in AI Foundry](./Images/aifoundry-enable-audio.jpeg)
+![enable audio in AI Foundry](./Images/aifoundry-enable-audio.jpg)
 
 4. Interact with the model by clicking on the **start listening** button, saying ``hello`` and ask the model a few facts.
 

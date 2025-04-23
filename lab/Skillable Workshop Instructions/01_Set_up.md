@@ -29,7 +29,7 @@ In this workshop we will be working on Azure AI Foundry portal, focusing especia
 
 2. Locate the **Workshop AI Hub** in the list of available hubs. **Click on the project** with the hub to access its settings and resources.
 
-![Hub management tab](./Images/aifoundry-hub-navigation.jpeg)
+![Hub management tab](./Images/aifoundry-hub-navigation.jpg)
 
 > [!NOTE]
 > For the sake of this workshop an AI project with its related assets has been created for you, so you can focus on usage. Here's a list of resources that have > been pre-provisioned in the workshop environment:
@@ -41,7 +41,7 @@ In this workshop we will be working on Azure AI Foundry portal, focusing especia
 
 ## Project
 
-![project overview tab](./Images/aifoundry-project-overview.jpeg)
+![project overview tab](./Images/aifoundry-project-overview.jpg)
 
 ### Project Overview
 
@@ -55,7 +55,7 @@ On this page, we can see an overview of our Azure AI Foundry portal Project. Thi
 
 You will notice the navigation bar has updated with new tabs, which represent functionalities tied to our project.
 
-![project navigation bar](./Images/aifoundry-project-navigation.jpeg)
+![project navigation bar](./Images/aifoundry-project-navigation.jpg)
 
 We have two new sections:
 1.  The first section includes _Playgrounds_ to interact with the models, _Overview_ which provides a general overview of your project, _Model Catalog_ which showcases the available models inside Azure AI Foundry, and _AI Services_ where you can see a list of Azure AI Services available along with demos, use cases and more.
@@ -93,13 +93,13 @@ We will be doing most of our work in these Playgrounds, but namely in the follow
 1. **Real-time audio playground**
 1. **Agents playground**
 
-![Image of Azure AI Foundry Playgrounds](./Images/aifoundry-playgrounds.jpeg)
+![Image of Azure AI Foundry Playgrounds](./Images/aifoundry-playgrounds.jpg)
 
 ### Chat Playground
 
 Within the playground section, navigate to the **Chat playground** and select **Try the Chat Playground.** This feature allows you to engage with and test various AI models in a conversational format.
 
-![Image of Azure AI Foundry Playground Chat Mode](./Images/aifoundry-chat-playground.jpeg)
+![Image of Azure AI Foundry Playground Chat Mode](./Images/aifoundry-chat-playground.jpg)
 
 1. **Deployment**: This section allows us to change between our deployed models.
 1. **System Message Box**: Here is where we enter instructions for the model, previous to the user interaction.
@@ -112,7 +112,7 @@ Within the playground section, navigate to the **Chat playground** and select **
 
 Navigate back to Playgrounds, select the **Image playground** and click **Try the Image Playground.** This option allows you to work with image generation
 
-![Image of Azure AI Foundry Playground Images Mode](./Images/aifoundry-image-playground.jpeg)
+![Image of Azure AI Foundry Playground Images Mode](./Images/aifoundry-image-playground.jpg)
 
 1. **Deployments**: In this drop-down we are able to choose the model to prompt for image generation. These models, just like the chat ones, come from our deployments.
 1. **Prompt Box**: Similar to the chat playground's box, this is where the models get their input from the user. In the case of images, descriptions of what we want to generate.
@@ -122,7 +122,7 @@ Navigate back to Playgrounds, select the **Image playground** and click **Try th
 
 Navigate back to Playgrounds, then select the **Real-time audio playground** and click **Try the Real-time audio Playground.** This feature allows you to engage with and test various AI models in an audio conversational format.
 
-![Image of Azure AI Foundry Playground Real time audio mode](./Images/aifoundry-real-time-audio.jpeg)
+![Image of Azure AI Foundry Playground Real time audio mode](./Images/aifoundry-real-time-audio.jpg)
 
 1. **Deployment**: This section allows us to change between our deployed models.
 1. **Server turn detection**: Determines if the server should utilize voice activity detection (VAD) to identify when a user has finished speaking.
@@ -136,14 +136,14 @@ Navigate back to Playgrounds, then select the **Real-time audio playground** and
 
 In the Navigation bar, select **Agents**. This feature provides you with the tools to build, test, and customize AI-driven agents.
 
-![Image of Azure AI Foundry Playground Agents Mode](./Images/agents-playground-pt1.jpeg)
+![Image of Azure AI Foundry Playground Agents Mode](./Images/agents-playground-pt1.jpg)
 
 Once you _create your first Agent_ you will see the UI components as follows:
 1. **Agent id and name:** Here you can give your Agent a name.
 1. **Deployment**: In this drop-down we are able to choose the model to prompt for image generation. These models, just like the chat ones, come from our deployments.
 1. **Instructions Box:** Here is where we enter instructions for the model, previous to the user interaction.
 
-![](Images/agents-playground-pt2.jpeg)
+![](Images/agents-playground-pt2.jpg)
 
 4. **Knowledge:** Knowledge gives the agent access to data sources for grounding responses.
 1. **Actions:** Enhance the agent's capabilities by allowing it to run various tools at runtime.
