@@ -32,7 +32,7 @@ In this workshop we will be working on Azure AI Foundry portal, focusing especia
 ![Hub management tab](./Images/aifoundry-hub-navigation.jpeg)
 
 > [!NOTE]
-> For the sake of this workshop an AI project with its related assets has been created for you, so you can focus on usage. Here's a list of resources that have > been pre-provisioned in the workshop environment:
+> For the sake of this workshop an AI project with its related assets has been created for you, so you can focus on usage. Here's a list of resources that have been pre-provisioned in the workshop environment:
 > - Azure AI Hub, which is your workspace in Azure AI Foundry and a container of projects. it comes with an Azure Key Vault and an Azure Sotrage 
 > Accountattached to store secrets and data.
 > - Azure AI Project, which encapsulates the tools and assets used to create a specific AI solution
@@ -70,7 +70,7 @@ In this lab we are going to provide models access to a set of private data, to t
 
 1. Navigate to **Data + Indexes**
 2. Select, **New data,** and select **Upload files/folders** as **Data source**
-3. Open the **Upload files or folder** dropdown, select **Upload folder** and upload the files hosted in the **product_catalog** folder on Desktop. If you can't find the folder on the VM, you can also download files [from this repo](./assets/product_catalog/).
+3. Open the **Upload files or folder** dropdown, select **Upload folder** and upload the files hosted in the **product_catalog** folder on Desktop. 
 4. Once data is uploaded, name your data as **contoso-products** and finish.
 5. Next, in the same tab, navigate to index and create an index for your data.
    - Move to the **Indexes** tab in the Data + Indexes page.

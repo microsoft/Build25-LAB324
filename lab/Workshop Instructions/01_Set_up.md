@@ -1,20 +1,20 @@
 # Get started
 
 > [!TIP]
-> What is **Azure Azure AI Foundry**? Azure AI Foundry is the ultimate platform for innovators to create the future. It offers a comprehensive suite of Azure AI capabilities and tools to design, customize, and manage AI applications and agents. It's seamlessly integrated with the world's most loved developer tools, including GitHub, Visual Studio, and Copilot Studio. Azure AI Foundry empowers developers and IT admins to bring their AI visions to life with ease and efficiency.
+> What is **Azure Azure AI Foundry**? Azure AI Foundry is the ultimate platform for innovators to create generative AI solution. It offers a comprehensive suite of Azure AI capabilities and tools to design, customize, and manage AI applications and agents. It's seamlessly integrated with the world's most loved developer tools, including GitHub, Visual Studio, and Copilot Studio. Azure AI Foundry empowers developers and IT admins to bring their AI visions to life with ease and efficiency.
 
 ## Prerequisites
 
 To complete the lab, you will need:
 
 - An Azure subscription - [Create one for free.](https://azure.microsoft.com/free/cognitive-services?WT.mc_id=aiml-132569-bethanycheum)
-- An Azure OpenAI resource with [GPT-4o and DALL.E 3 models available in a supported region.](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models#assistants-preview?WT.mc_id=aiml-132569-bethanycheum)
+- An Azure OpenAI resource with [GPT-4o-mini, GPT-4o-mini-realtime-preview, DALL-E 3 and o4-mini models available in a supported region.](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models#assistants-preview?WT.mc_id=aiml-132569-bethanycheum)
 
 ## Deploying your resources
 
 In this workshop we will be working with Azure AI Foundry. First, deploy the necessary resources by following the steps below:
 
-1. Click the deploy to Azure button to deploy your resources: [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Faitour-interact-with-llms%2Fmain%2Flab%2FWorkshop%20Instructions%2Fassets%2FAITour24_WKR540_Template.json)
+1. Click the deploy to Azure button to deploy your resources: [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Faitour-interact-with-llms%2Fmain%2Flab%2FWorkshop%20Instructions%2Fassets%2Flab324-template.json)
 
 2. In the newly opened tab, sign in to your Azure account.
 
@@ -41,6 +41,14 @@ In this workshop we will be working with Azure AI Foundry. First, deploy the nec
 
 ![Hub management tab](./Images/aifoundry-hub-navigation.jpeg)
 
+> [!NOTE]
+ > If you used the [workshop template](./assets/lab324-template.json) to provision the resources, an AI project with its related assets has been already created for you, so you can focus on usage. Here's a list of resources that have been pre-provisioned in the workshop environment:
+ > - Azure AI Hub, which is your workspace in Azure AI Foundry and a container of projects. it comes with an Azure Key Vault and an Azure Sotrage 
+ > Accountattached to store secrets and data.
+ > - Azure AI Project, which encapsulates the tools and assets used to create a specific AI solution
+ > - Azure AI Services, which provides access to generative AI models 
+ > - Azure AI Search, which enables advanced search capabilities
+
 ## Project
 
 ![project overview tab](./Images/aifoundry-project-overview.jpeg)
@@ -66,7 +74,25 @@ We have two new sections:
 1. **My assets**: Here you can add additional elements to the project, with resources such as _Data_, _Indexes_, _models and endpoints_ and _Web apps_ to be used as part of your work.
 1. **Management Center:** a location to manage all you  hub and project details and resources.
 
-For this lab we will focus on using the **Playgrounds**, navigate to the Playgrounds and move on to the next section.
+## Data and indexes
+ 
+ In this lab we are going to provide models access to a set of private data, to test its capabilities to ground responses on it. In this step, let's add this data in our Azure AI project. 
+
+Download the data on your machine from [this folder](https://github.com/microsoft/aitour-concept-to-creation-ai-studio/tree/main/src/data/products). For the sake of this lab, you don't need to download the whole list of files, pick the first 5 and save them into a folder named **product_catalog** on your Desktop.
+ 
+ 1. Navigate to **Data + Indexes**
+ 2. Select, **New data,** and select **Upload files/folders** as **Data source**
+ 3. Open the **Upload files or folder** dropdown, select **Upload folder** and upload the files hosted in the **product_catalog** folder you just created.
+ 4. Once data is uploaded, name your data as **contoso-products** and finish.
+ 5. Next, in the same tab, navigate to index and create an index for your data.
+    - Move to the **Indexes** tab in the Data + Indexes page.
+    - Click on the **+ New index** button.
+    - Change the default name of your index to **products-catalog**.
+    - Select **Data in Azure AI Foundry** as the data source and then the data source you just uploaded.
+    - In the **Index Settings** section, select the Azure AI Search connection that has been pre-provisioned for this project.
+    - In the **Search Settings** section, make sure that vectorization is enabled and select the default Azure OpenAI resource for your hub as embedding model.
+ 
+ Move to the next section as your data is being uploaded.
 
 ## Playgrounds
 

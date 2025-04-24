@@ -35,6 +35,10 @@ Lastly, we can **Run** the Agent. This means activating an Agent to begin runnin
 
 ## Creating the Agent
 
+First thing first, download the data we are going to use to ground your agent's responses from [here](https://github.com/microsoft/aitour-interact-with-llms/tree/main/lab/Skillable%20Workshop%20Instructions/assets).
+
+Next, follow the steps below to create an customize your agent.
+
 1. Under _Build and customize_ on the left navigation bar, select **Agents.** In the page that just opened up, click on the down arrow to select you Azure OpenAI Service resource then select the **Let's go** button.
 
 ![screenshot to select Aure OpenAI Service Resource](Images/agents-aoai-select.jpeg)
@@ -73,9 +77,6 @@ Lastly, we can **Run** the Agent. This means activating an Agent to begin runnin
 
 6. On the next window, click on **select local files** and select the `Contoso_Sales_Revenue.csv` file on your Desktop.
     ![Agents code interpreter](Images/aifoundry-codeinterpreter-upload-file.jpeg)
-
-    >[!NOTE]
-    > If you cannot find the file on your desktop, you can download it from [here](assets/Contoso_Sales_Revenue.csv).
 
 7. Click on the **upload and add** button. You should now see the file under the *Code Interpreter* tool.
 

@@ -75,7 +75,7 @@ Lastly, we can **Run** the Agent. This means activating an Agent to begin runnin
     ![Agents code interpreter](Images/aifoundry-codeinterpreter-upload-file.jpeg)
 
     >[!NOTE]
-    > If you cannot find the file on your desktop, you can download it from [here](assets/Contoso_Sales_Revenue.csv).
+    > If you cannot find the file on your desktop, you can download it from [here](https://github.com/microsoft/aitour-interact-with-llms/tree/main/lab/Skillable%20Workshop%20Instructions/assets).
 
 7. Click on the **upload and add** button. You should now see the file under the *Code Interpreter* tool.
 
