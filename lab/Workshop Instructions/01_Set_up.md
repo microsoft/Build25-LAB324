@@ -78,10 +78,12 @@ We have two new sections:
 
 In this lab we are going to provide models access to a set of private data, to test its capabilities to ground responses on it. In this step, let's add this data in our Azure AI project. 
 
+Download the data on your machine from [this folder](https://github.com/microsoft/aitour-concept-to-creation-ai-studio/tree/main/src/data/products). For the sake of this lab, you don't need to download the whole list of files, pick the first 5 and save them into a folder named **product_catalog** on your Desktop.
+
 1. Navigate to **Data + Indexes**
 2. Select, **New data,** and select **Upload files/folders** as **Data source**
         ![Select your data](./Images/ai-foundry-select-data.png)
-3. Open the **Upload files or folder** dropdown, select **Upload folder** and upload the files hosted in the **product_catalog** folder on Desktop.
+3. Open the **Upload files or folder** dropdown, select **Upload folder** and upload the files hosted in the **product_catalog** folder you just created.
         ![Upload folder](./Images/ai-foundry-upload-folder.png) 
 4. Once data is uploaded, name your data as **contoso-products** and finish.
 5. Next, in the same tab, navigate to _Indexes_ and create an index for your data.

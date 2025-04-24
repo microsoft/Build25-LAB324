@@ -2,15 +2,15 @@
 
 Welcome to Part 5 of this workshop! 
 
-So far, we have interacted with Large Language Models in many different ways. However, these interactions have been isolated and tied to a very specific purpose. **Azure AI Agents** represent the next step in our interactions, as they help us integrate previous interactions into one solution.
+So far, we have interacted with Large Language Models in many different ways. However, these interactions have been isolated and tied to a very specific purpose. **Azure AI Foundry Agents** represent the next step in our interactions, as they help us integrate previous interactions into one solution.
 
 
 > [!TIP] 
-> **What is an Azure AI Agent?**  is a fully managed service designed to empower developers to securely build, deploy, and scale high-quality, and extensible AI agents without needing to manage the underlying compute and storage resources. It integrates capabilities such as state management, context association, chat threads, and code execution, making it easier to access third-party extensions​.
+> **What is Azure AI Foundry Agent Service?**  It's a fully managed service designed to empower developers to securely build, deploy, and scale high-quality, and extensible AI agents without needing to manage the underlying compute and storage resources. It integrates capabilities such as state management, context association, chat threads, and code execution, making it easier to access third-party extensions​.
 
 Previously, building custom AI Agents needed heavy lifting even for experienced developers. While the chat completions API is lightweight and powerful, it's inherently stateless, which means that developers had to manage conversation state and chat threads, tool integrations, retrieval documents and indexes, and execute code manually.
 
-Within Azure AI Foundry, an AI Agent acts as a "smart" microservice that can be used to answer questions (RAG), perform actions, or completely automate workflows. It achieves this by combining the power of generative AI models with tools that allow it to access and interact with real-world data sources.
+Within Azure AI Foundry, an AI Agent acts as a "smart" microservice that can be used to answer questions based on custom data (RAG), perform actions, or completely automate workflows. It achieves this by combining the power of generative AI models with tools that allow it to perform an action on behalf of the user.
 
 Agents can also access multiple tools in parallel, if needed. Some of these tools include:
 - **Function Calling**
@@ -23,23 +23,23 @@ In this section, we will be covering Code Interpreter.
 
 ## Understanding the Components of Agents
 
-To begin working with Azure AI Agents, it is important to understand and address the different components that take part in its functionality.
+To begin working with Foundry Agents, it is important to understand and address the different components that take part in its functionality.
 
-As we now know, an **Agent** is simply a "smart" micrososervice that can peform actions, automate workglows or answer questions using RAG.
+As stated above, an **Agent** is simply a "smart" micrososervice that can perform actions, automate workflows or answer questions using RAG.
 
 The next step once the Agent has been created, is to create a **Thread**. A **Thread** is a conversation session between an Agent and a user. Threads store Messages and automatically handle truncation to fit content into a model’s context.
 
-The **Messages** are created by either the Agent or an user, include text, images and other files. These are stored as a list on the thread.
+The **Messages** are created by either the Agent or an user. They can include text, images and other files. These are stored as a list on the thread.
 
-Lastly, we can **Run** the Agent. This means activating an Agent to begin running base on the contents of the Thread. The Agent uses its configuration and the *Thread’s Messages* to perform tasks by calling models and tools. As part of a Run, the Agent *appends Messages to the Thread*.
+Lastly, we can **Run** the Agent. This means activating an Agent to begin running based on the contents of the Thread. The Agent uses its configuration and the *Thread’s Messages* to perform tasks by calling models and tools. As part of a Run, the Agent *appends Messages to the Thread*.
 
 ## Creating the Agent
 
-1. Under _Build and customize_ on the left navigation bar, select **Agents.** In the page that just opened up, click on the down arrow to select you Azure OpenAI Service resource then select the **Let's go** button.
+1. Under _Build and customize_ on the left navigation bar, select **Agents.** In the page that just opened up, click on the down arrow to select your Azure OpenAI Service resource then select the **Let's go** button.
 
 ![screenshot to select Aure OpenAI Service Resource](Images/agents-aoai-select.jpeg)
 
-2. A new Agent will already be created for you. In the **Deployments** section, ensure you select **gpt-4o-mini** model.
+2. A new Agent will already be created for you. Click on it, to be able to configure its properties. In the **Deployments** section, ensure you select **gpt-4o-mini** model.
 
     >[!TIP] 
     > **Ensure that you chose the correct deployment**. It should say **gpt-4o-mini** along with its version. 
@@ -48,7 +48,7 @@ Lastly, we can **Run** the Agent. This means activating an Agent to begin runnin
 
     ```Contoso Outdoor Sales Agent```
 
-3. Next, we can provide the Agent with an **instruction**. Similar to the *System Message* we saw in previous sections, it provides the Agent with goals to follow. Navigate to the **Prompt** tab and copy the following instructions into the Instructions textbox.
+3. Next, we can provide the Agent with a set of **instructions**. Similar to the *System Message* we saw in previous sections, it provides the Agent with goals to follow. Copy the following instructions into the Instructions textbox.
 
     ``` 
     You are a sales Agent for Contoso Outdoor. You are polite, professional, helpful and friendly.
@@ -108,6 +108,6 @@ You will notice that we get a series of sample questions that we can test. Test 
 
     The Agent should provide you with a graph showcasing a trending product by carrying out an analysis of the sales revenue data overtime.
 
-Congratulations! You have now completed the last part of the workshop and have learnt what Azure OpenAI Agents are, how they work and how to create one using Azure AI Foundry portal.
+Congratulations! You have now completed the last part of the workshop and have learnt what Foundry Agents are, how they work and how to create one using Azure AI Foundry portal.
 
 Click **Next** to advance to the Summary section of the workshop.
