@@ -2,11 +2,11 @@
 
 Welcome to Part 5 of this workshop! 
 
-So far, we have interacted with Large Language Models in many different ways. However, these interactions have been isolated and tied to a very specific purpose. **Azure AI Foundry Agents** represent the next step in our interactions, as they help us integrate previous interactions into one solution.
+So far, we have interacted with Large Language Models in many different ways. However, these interactions have been isolated and tied to a very specific purpose. **Azure AI Agents** represent the next step in our interactions, as they help us integrate previous interactions into one solution.
 
 
 > [!TIP] 
-> **What is Azure AI Foundry Agent Service?**  It's a fully managed service designed to empower developers to securely build, deploy, and scale high-quality, and extensible AI agents without needing to manage the underlying compute and storage resources. It integrates capabilities such as state management, context association, chat threads, and code execution, making it easier to access third-party extensions​.
+> **What is Azure AI Agent Service?**  It's a fully managed service designed to empower developers to securely build, deploy, and scale high-quality, and extensible AI agents without needing to manage the underlying compute and storage resources. It integrates capabilities such as state management, context association, chat threads, and code execution, making it easier to access third-party extensions​.
 
 Previously, building custom AI Agents needed heavy lifting even for experienced developers. While the chat completions API is lightweight and powerful, it's inherently stateless, which means that developers had to manage conversation state and chat threads, tool integrations, retrieval documents and indexes, and execute code manually.
 
@@ -23,7 +23,7 @@ In this section, we will be covering Code Interpreter.
 
 ## Understanding the Components of Agents
 
-To begin working with Foundry Agents, it is important to understand and address the different components that take part in its functionality.
+To begin working with AI Agents, it is important to understand and address the different components that take part in its functionality.
 
 As stated above, an **Agent** is simply a "smart" micrososervice that can perform actions, automate workflows or answer questions using RAG.
 
@@ -108,6 +108,6 @@ You will notice that we get a series of sample questions that we can test. Test 
 
     The Agent should provide you with a graph showcasing a trending product by carrying out an analysis of the sales revenue data overtime.
 
-Congratulations! You have now completed the last part of the workshop and have learnt what Foundry Agents are, how they work and how to create one using Azure AI Foundry portal.
+Congratulations! You have now completed the last part of the workshop and have learnt what AI Agents are, how they work and how to create one using Azure AI Foundry portal.
 
 Click **Next** to advance to the Summary section of the workshop.

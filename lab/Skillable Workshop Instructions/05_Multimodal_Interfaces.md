@@ -89,4 +89,4 @@ By integrating the **gpt-4o-mini-realtime-preview** model, users can interact wi
 
 Congratulations! You have now completed the fourth part of the lab and you learnt how to interact with multimodal models. 
 
-Click **Next** to proceed to the Azure AI Foundry Agents section.
+Click **Next** to proceed to the Azure AI Agents section.
