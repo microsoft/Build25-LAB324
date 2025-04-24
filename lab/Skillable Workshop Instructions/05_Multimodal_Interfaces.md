@@ -27,7 +27,7 @@ Until now, we have interacted with LLMs using a single modality: inputting text 
 
 ## Interacting with the model using an Image
 
-1. Navigate to the  **playgrounds** section and select **Try the Chat Playground**
+1. Navigate to the **playgrounds** section and select **Try the Chat Playground**
 
 >[!alert] Before you start, click on **Clear Chat** to avoid any context from previous interactions.
 
