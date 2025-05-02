@@ -1,12 +1,12 @@
-# Part 3 - Multimodal
+# Part 4 - Multimodal
 
-Until now, we have interacted with LLMs using a single modality: inputting text and receiving either text or images. However, multimodal interfaces are becoming increasingly popular because they allow users to interact with models using multiple modalities, such as text, images, and speech, thereby improving human-computer interactions. In this section, we will explore how to use multimodal interfaces to interact with **GPT-4o mini** and **GPT-4o audio**.
+Until now, we have interacted with LLMs using a single modality: inputting text and receiving either text or images. However, multimodal interfaces are becoming increasingly popular because they allow users to interact with models using multiple modalities, such as text, images, and speech, thereby improving human-computer interactions. In this section, we will explore how to use multimodal interfaces to interact with **GPT-4o mini** and **GPT-4o-mini realtime preview**.
 
 
 > [!TIP]
 > **GPT-4o mini** is a multimodal model that incorporates both natural language processing and visual understanding. It is able to process as input a combination of text and images, and generate an output which is relevant to both modalities.
 
-**GPT-4o realtime** supports low-latency, "speech-in, speech-out" conversational interactions. It is a great fit for use cases involving live interactions between a user and a model, such as customer support agents, voice assistants, and real-time translators.
+**GPT-4o-mini realtime preview** supports low-latency, "speech-in, speech-out" conversational interactions. It is a great fit for use cases involving live interactions between a user and a model, such as customer support agents, voice assistants, and real-time translators.
 
 ## Best Practices
 
@@ -27,7 +27,7 @@ Until now, we have interacted with LLMs using a single modality: inputting text 
 
 ## Interacting with the model using an Image
 
-1. Navigate to the  **playgrounds** section and select **Try the Chat Playground**
+1. Navigate to the **playgrounds** section and select **Try the Chat Playground**
 
 >[!alert] Before you start, click on **Clear Chat** to avoid any context from previous interactions.
 
@@ -67,9 +67,9 @@ For this next demo, we have an obstructed image. Bounding boxes were purposefull
 
 ## Real time-audio interactions
 
-By integrating the **gpt-4o-realtime-preview** model, users can interact with the platform using voice commands, making the shopping experience more engaging and accessible.
+By integrating the **gpt-4o-mini-realtime-preview** model, users can interact with the platform using voice commands, making the shopping experience more engaging and accessible.
 
-1. Navigate back to **Playgrounds** and select **try Real-time audio playground** and set the deployment to **gpt-4o-realtime-preview**
+1. Navigate back to **Playgrounds** and select **try Real-time audio playground** and set the deployment to **gpt-4o-mini-realtime-preview**
 
 2. Update the **model instructions box** with the following:
 
@@ -87,6 +87,6 @@ By integrating the **gpt-4o-realtime-preview** model, users can interact with th
 
 ## Next Steps
 
-Congratulations! You have now completed the 3rd part of the lab and you learnt how to interact with multimodal models. 
+Congratulations! You have now completed the fourth part of the lab and you learnt how to interact with multimodal models. 
 
-Move to [Part 4: Azure AI Agents](./05_AI_Agents.md)
+Click **Next** to proceed to the Azure AI Agents section.
