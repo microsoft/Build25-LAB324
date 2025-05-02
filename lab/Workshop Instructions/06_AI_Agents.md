@@ -33,6 +33,8 @@ The **Messages** are created by either the Agent or an user. They can include te
 
 Lastly, we can **Run** the Agent. This means activating an Agent to begin running based on the contents of the Thread. The Agent uses its configuration and the *Thread’s Messages* to perform tasks by calling models and tools. As part of a Run, the Agent *appends Messages to the Thread*.
 
+When building and interacting with an AI Agent in the Foundry Portal - as you are going to do in the next section - most of the complexity of its components are hidden to the user.
+
 ## Creating the Agent
 
 First thing first, download the data we are going to use to ground your agent's responses from [here](https://github.com/microsoft/aitour-interact-with-llms/tree/main/lab/Skillable%20Workshop%20Instructions/assets).
@@ -42,7 +44,9 @@ Next, follow the steps below to create an customize your agent.
 
 ![screenshot to select Aure OpenAI Service Resource](Images/agents-aoai-select.jpeg)
 
-2. A new Agent will already be created for you. Click on it, to be able to configure its properties. In the **Deployments** section, ensure you select **gpt-4o-mini** model.
+2. In the **Deployments** section, ensure you select **gpt-4o-mini** model. Then click **Next**.
+
+3. A new Agent will be created for you. Click on it, to be able to configure its properties. In the **Deployments** section, ensure you select **gpt-4o-mini** model.
 
     >[!TIP] 
     > **Ensure that you chose the correct deployment**. It should say **gpt-4o-mini** along with its version. 
@@ -51,7 +55,7 @@ Next, follow the steps below to create an customize your agent.
 
     ```Contoso Outdoor Sales Agent```
 
-3. Next, we can provide the Agent with a set of **instructions**. Similar to the *System Message* we saw in previous sections, it provides the Agent with goals to follow. Copy the following instructions into the Instructions textbox.
+5. Next, we can provide the Agent with a set of **instructions**. Similar to the *System Message* we saw in previous sections, it provides the Agent with goals to follow. Copy the following instructions into the Instructions textbox.
 
     ``` 
     You are a sales Agent for Contoso Outdoor. You are polite, professional, helpful and friendly.

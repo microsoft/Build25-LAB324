@@ -10,12 +10,13 @@ As a first step, login into the lab Virtual Machine using the following credenti
 
 > [!TIP]
 >  First time using **Skillable?** The green "T" (e.g., +++Admin+++) indicates values that are automatically input for you at the current cursor location in VM, with one click. This reduces your effort and minimizes input errors.
+> Also, you can always click on the images to enlarge them, if needed.
 
 ## Sign in to Azure AI Foundry portal
    
 In this workshop we will be working on Azure AI Foundry portal, focusing especially on the playground feature. 
 
-1. On the Desktop, click on **Microsoft Edge** browser. Navigate to the second browser tab which will be showing the Azure AI Foundry portal homepage as shown in the following image.
+1. On the Desktop, click on **Microsoft Edge** browser. You'll get a browser tab with the Azure AI Foundry portal homepage as shown in the following image.
 
 ![Homepage of Azure AI Foundry](./Images/aifoundry-homepage.jpeg)
 
@@ -84,7 +85,9 @@ In this lab we are going to provide models access to a set of private data, to t
         ![Select Azure AI Search Service](./Images/ai-foundry-select-search-service.png)
    - A new window will be opened, where you can select the Azure AI Search resource that has been pre-provisioned for you. 
         ![Add connection](./Images/ai-foundry-add-connection.png)
-   - In the **Search Settings** section, make sure that vectorization is enabled and select the default Azure OpenAI resource for your hub as embedding model.
+   - Back to the previous window, the **Select Azure AI Search service** dropdown menu has been populated with the new connection. Select it and then click **Next**.
+        ![Confirm Search Service](./Images/aifoundry-confirm-search-service.png)
+   - In the **Search Settings** section, leave default configurations. Then confirm by clicking on **Create vector index**.
 
 Move to the next section as your data is being uploaded.
 
@@ -99,7 +102,7 @@ We will be doing most of our work in these Playgrounds, but namely in the follow
 1. **Real-time audio playground**
 1. **Agents playground**
 
-![Image of Azure AI Foundry Playgrounds](./Images/aifoundry-playgrounds.jpeg)
+![Image of Azure AI Foundry Playgrounds](./Images/aifoundry-playgrounds.png)
 
 ### Chat Playground
 
@@ -118,25 +121,27 @@ Within the playground section, navigate to the **Chat playground** and select **
 
 Navigate back to Playgrounds, select the **Image playground** and click **Try the Image Playground.** This option allows you to work with image generation
 
-![Image of Azure AI Foundry Playground Images Mode](./Images/aifoundry-image-playground.jpeg)
+![Image of Azure AI Foundry Playground Images Mode](./Images/aifoundry-image-playground.jpg)
 
 1. **Deployments**: In this drop-down we are able to choose the model to prompt for image generation. These models, just like the chat ones, come from our deployments.
 1. **Prompt Box**: Similar to the chat playground's box, this is where the models get their input from the user. In the case of images, descriptions of what we want to generate.
 1. **Results Box**: Finally, here is where the generated images are displayed.
 
-### Real-time audio playground
+### Audio playground
 
-Navigate back to Playgrounds, then select the **Real-time audio playground** and click **Try the Real-time audio Playground.** This feature allows you to engage with and test various AI models in an audio conversational format.
+Navigate back to Playgrounds, then select the **Audio playground** and click **Try the Audio Playground.** This feature allows you to engage with and test various AI models in an audio conversational format.
 
-![Image of Azure AI Foundry Playground Real time audio mode](./Images/aifoundry-real-time-audio.jpeg)
+![Image of Azure AI Foundry Playground Real time audio mode](./Images/aifoundry-real-time-audio.png)
 
 1. **Deployment**: This section allows us to change between our deployed models.
-1. **Server turn detection**: Determines if the server should utilize voice activity detection (VAD) to identify when a user has finished speaking.
 1. **System Message Box**: Here is where we enter instructions for the model, previous to the user interaction.
 1. **Choose a voice**: gpt-4o-realtime offers a variety of voices to choose from with unique accents or tonal capabilities tailored to your liking.
 1. **Server turn detection**: additional parameters to help optimize the model's efficiency and performance by improving voice activity detection.
 1. **Parameters**: This tab contains the models detailed settings, such as temperature and max response.
 1. **Prompt Button**: Similar to the chat playground's box, this is where the models get their input from the user. 
+
+> !NOTE
+> You need to click on **Enable microphone** to be able to use real-time audio as chat input.
 
 ## Agents playground
 
@@ -161,6 +166,4 @@ Once you _create your first Agent_ you will see the UI components as follows:
 That covers the necessary setup and basics of Azure AI Foundry portal . We will now move forward to begin interacting with the models. 
 
 - Navigate to the  **playgrounds** select the **Chat playground** and click **Try the Chat Playground.**  
-- In the _instructions tab_, Click Next to proceed to Part 1: Text Generation
-
-Click **Next** to proceed to the Text Generation section.
+- Click **Next** to proceed to the Text Generation section.

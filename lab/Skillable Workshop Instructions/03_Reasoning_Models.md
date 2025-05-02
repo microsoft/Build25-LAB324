@@ -2,9 +2,9 @@
 
 So far, we have been able to use large language models (LLMs) to generate text and establish conversation. But what would happen if we asked these models to solve a logic puzzle or perform a mathematical operation to address a problem? We might get lucky if the model's training data happened to include a solution to a similar problem, but once we attempt to ask clarifying questions or present a problem the model hasn’t been explicitly trained on, it’s unlikely we’ll arrive at an accurate solution. Standard LLMs are not designed to tackle these types of problems. **This is where reasoning models come into play.**
 
-Reasoning models can reach higher levels of performance in domains like math, coding, science, strategy, and logistics. The way these models produces outputs is by explicitly using chain of thought to explore all possible paths before generating an answer. They verify their answers as they produce them which helps them to arrive to better more accurate conclusions. This means that reasoning models may require less context in prompting in order to produce effective results.
+Reasoning models can reach higher levels of performance in domains like math, coding, science, strategy, and logistics. The way these models produces outputs is by explicitly using chain of thought to explore all possible paths before generating an answer. They verify their answers as they produce them which helps them to arrive to more accurate conclusions. This means that reasoning models may require less context in prompting in order to produce effective results.
 
-Such way of scaling model's performance is referred as inference compute time as it trades performance against higher latency and cost. It contrasts to other approaches that scale through training compute time.
+Such way of scaling model's performance is referred as **inference compute time** as it trades performance against higher latency and cost. It contrasts to other approaches that scale through training compute time.
 
 Reasoning models then produce two types of outputs:
 
@@ -15,13 +15,13 @@ Both of these completions count towards content generated from the model and hen
 
 ### Reasoning Models Available in Azure AI Foundry's Model Catalog
 
-- `o1`
-- `DeepSeek-R1`
-- `o3-mini`
-- `o3`
-- `o4-mini`
+- o1
+- DeepSeek-R1
+- o3-mini
+- o3
+- o4-mini
 
-We will be working with `o4-mini` for this section.
+We will be working with **o4-mini** for this section.
 
 ## Interacting with Reasoning Models
 
@@ -30,13 +30,15 @@ We will be working with `o4-mini` for this section.
 >[!alert] Before you start, click on **Clear Chat** to avoid any context from previous interactions.
 
 
-2. Select `o4-mini` under the Deployment section.
+2. Select **o4-mini** under the Deployment section.
 
 ![Selecting a reasoning model from deployments](./Images/aifoundry-reasoning-modelselect.png)
 
 3. In the box that reads **Give the model instructions and context**, type in the following System Message:
 
 `You are an AI that assists with solving complex problems, clearly showcasing the steps to reach a solution.`
+
+4. Confirm by clicking on **Apply changes**.
 
 ### **Math**:
 
@@ -75,6 +77,9 @@ You may not use any other numbers. The symbols used would be known by most high 
 
 What did the model produce for an answer? Note, there is at least two different approaches that correctly solve this puzzle!
 
+> !NOTE
+> Due to the complexity of the asks in this section, you might experience a higher latency with respect to the exercises of the previous part. 
+
 ### **Logic**:
 
 Next, let's try a logic puzzle:
@@ -89,7 +94,7 @@ Again, the model is able to reason appropriately and come to the solution accura
 
 As mentioned before, one of the areas where reasoning models excel is at dealing with code. 
 
-1. We have all run into code that may be a bit hard to understand at first glance. Especially if we do not have context around it. Let's test `o4-mini` out with this piece of uncommented code, with ambiguous variable names:
+1. We have all run into code that may be a bit hard to understand at first glance. Especially if we do not have context around it. Let's test o4-mini out with this piece of uncommented code, with ambiguous variable names:
 
 ```
 Explain what the following code piece is doing:
@@ -110,7 +115,7 @@ print("Result:", x)
 In what scenario would this code piece be useful? Rewrite it for clarity and ease of understanding in the future.
 ```
 
-3. What if we had to face code in a programming language we are not familiar with? `o4-mini` and other reasoning models are able to convert a piece of code from one language to another. 
+3. What if we had to face code in a programming language we are not familiar with? o4-mini and other reasoning models are able to convert a piece of code from one language to another. 
 
 Let's try converting this piece of Go code into C#:
 

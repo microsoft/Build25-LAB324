@@ -14,9 +14,8 @@ Let's start with a few prompts and observe the response using the chat playgroun
 
 1. Navigate to the playgrounds section, on the left-hand navigation bar, and click **Try the Chat Playground.**
 2. In the Chat playground, find the text box labeled _"Type user query here."_
-3. From the prompt examples below, click the "T" (e.g., ``here is a sample prompt``) which will automatically input for you at the current cursor location, with one click.
-4. After adding your prompt, locate the Paper Plane icon, usually positioned next to the input box. Click on the Paper Plane icon to submit your text to the model deployment.
-5. After sending your query, wait a moment for the model to process and respond. The response will appear in the chat window below your input.
+3. After adding your prompt, locate the Paper Plane icon, usually positioned next to the input box. Click on the Paper Plane icon to submit your text to the model deployment.
+4. After sending your query, wait a moment for the model to process and respond. The response will appear in the chat window below your input.
 
 Here are some examples to try, but get creative with your own prompts and see what happens!
 
@@ -68,19 +67,7 @@ Asteroid Meat Feast: Loaded with pepperoni, ham, ground beef, bacon, and Italian
 
 >[!alert] Before you start, click on **Clear Chat** to avoid any context from previous interactions.
 
-When interacting with LLMs, a useful tip is to imagine that you are speaking to an untrained intern. So the more details you can provide about the task to be performed, the better the results you will get. In particular, a useful strategy is to break down the task into smaller parts and provide a prompt for each part. Let's try this with the website copy generation task.
-
-
-```
-Develop a new pizza for our restaurant.
-
-Instructions:
-- Start by deciding on a theme for the new pizza.
-- Determine the overall flavor profile. Should it be spicy, sweet, savory, or a mix?
-- Pick the base ingredients. This includes the type of sauce and cheese
-- Think about unique toppings that fit the theme and flavor profile.
-- Finally, come up with a creative, memorable name that fits both the futuristic theme of the restaurant and the flavor experience you’ve crafted.
-```
+When interacting with LLMs, a useful tip is to imagine that you are speaking to an untrained intern. So the more details you can provide about the task to be performed, the better the results you will get. In particular, a useful strategy is to break down the task into smaller parts and provide a prompt for each part. 
 
 Another option is using a technique - called **chain of thought** where the LLM is responsible for breaking the task down into smaller steps. The LLM uses its knowledge of the world and its ability to reason. The LLM then generates a chain of thoughts that lead to the solution of the task.
 Clear the playground chat again and then enter the user prompt below to see 'Chain of thought prompting' in action:
@@ -117,7 +104,7 @@ Your answer should be brief and engaging. Always use a friendly and professional
 Keep the descriptions family-friendly and suitable for all age groups visiting our pizzeria. Avoid any irrelevant information and controversial opinions.
 ```
 
-3. Find the button labeled Apply changes, it is located directly below the System message box. Click this button to save and apply the changes you’ve made to the System message field.
+3. Find the button labeled **Apply changes**, which is located directly below the System message box. Click this button to save and apply the changes you’ve made to the System message field.
 4. After applying the changes, click the **continue button** in the pop-up to update the system message.
 
 
@@ -189,14 +176,17 @@ Generative AI enables amazing creative solutions, but must be implemented respon
  - **Operationalize**: Operate the solution responsibly in production.
 
  One of the most effective ways to prevent the presence of harmful content in input to and output from your solution is to use **content filtering.** In Azure AI Foundry, this system is powered by [Azure AI Content Safety](https://learn.microsoft.com/azure/ai-services/content-safety/overview) and it works by running both the prompt and completion through an ensemble of classification models designed to detect several categories of harms.  When you deploy a pre-built model in Azure AI Foundry, this includes default content filters to ensure potential harmful prompts and completions are identified and removed. The default content filtering configuration is set to filter at the medium severity threshold for all harms categories for both prompts and completions. However, you can modify the content filters and configure the severity thresholds at resource level, according to your application needs. Under custom content filters, you can also create one or multiple **blocklist**, to account for specific phrases/words that you wish to block.  
- 
+
+ > !NOTE
+ > The prompts provided in this exercise contain content that might be disturbing to some users. This example is only used to demonstrate the functionality of the Content Filtering feature in Azure AI Foundry.
+
  1. Let's go back to our chat and test the default filtering:
 
     ```
     Is it possible to have sex on the TrailMaster X4 Tent?
     ```
 
-    The response will inform you the LLM cannot provide explicit content and inappropriate behaviour.
+    The response will inform you the LLM cannot provide the requested information.
 
 2. However, if we change the prompt to slang, it will give you a different response and will not identify the sexual content in the input message:
 
@@ -212,12 +202,12 @@ To mitigate the risk of a similar behaviour, we can add an extra layer of mitiga
 3. Once your blocklist is created, click on it and select **Add a new term**
 4. Add **do the deed** and confirm with the **Add term** button.
    ![Add term to blocklist](./Images/add-term.png)
-5. Move to **Content filters** and select **Create content filter** button
+5. Move back and then navigate to **Content filters** and select **Create content filter** button.
    ![Create content filter](./Images/create-content-filter.png)
 6. Name your filter **sexual_content_filter** and select the suggested Azure OpenAI Service in the dropdown menu as the connection. Then select **Next**.
 7. Under **Input filter**, set the slider for **sexual** as **High** and add the **profanitySlang** blocklist you just created. Click **Next** and repeat the same for the output filter configuration.
    ![Customizing filter](./Images/custom-filter.png)
-8. Apply filter to the **gpt-4o-mini** model instance, by selecting it from the list of deployments. You will be popped out with a message asking you to confirm if you want to replace the existing content filter. Click on **Replace** to confirm.
+8. Apply filter to the **gpt-4o-mini** model instance, by selecting it from the list of deployments. If popped out to confirm wether you want to replace the existing content filter, answer positevily. Click on **Replace** to confirm.
 9. Review and **Create content filter**.
 
 Navigate back to chat playground and repeat the question again. See the results and compare with the first one.
