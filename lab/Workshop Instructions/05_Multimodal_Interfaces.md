@@ -6,7 +6,7 @@ Until now, we have interacted with LLMs using a single modality: inputting text 
 > [!TIP]
 > **GPT-4o mini** is a multimodal model that incorporates both natural language processing and visual understanding. It is able to process as input a combination of text and images, and generate an output which is relevant to both modalities.
 
-**GPT-4o realtime** supports low-latency, "speech-in, speech-out" conversational interactions. It is a great fit for use cases involving live interactions between a user and a model, such as customer support agents, voice assistants, and real-time translators.
+> **GPT-4o realtime** supports low-latency, "speech-in, speech-out" conversational interactions. It is a great fit for use cases involving live interactions between a user and a model, such as customer support agents, voice assistants, and real-time translators.
 
 ## Best Practices
 
@@ -55,7 +55,7 @@ For this next demo, we have an obstructed image. Bounding boxes were purposefull
 2. Click on the attachment icon and go to Desktop folder and upload [context-001](./Images/context-001.png) image and send the prompt.
 
 
-> You might struggle to identify this text if I asked, 'Hey, what is this?' This demonstrates a classic computer vision challenge in optical character recognition: deciphering unclear, isolated words. Now, if I use gpt-4o-mini and ask, 'What is this?', it responds, 'The text is not clearly readable due to its handwritten style. It could be something like “Mark.”' Remarkably, it also notes, 'Some portions of the text appear to be blocked and cannot be read.'
+> This demonstrates a classic computer vision challenge in optical character recognition: deciphering unclear, isolated words. Now, if I use gpt-4o-mini and ask, 'What is this?', it responds, 'The text is not clearly readable due to its handwritten style. It could be something like “Mark.”' Remarkably, it also notes, 'Some portions of the text appear to be blocked and cannot be read.'
 
 3. We will add a new image, go to Desktop folder and upload [context-002](./Images/context-002.png) image to our chat, with the prompt ```Extract all the texts from the image. Explain what you think this is.```
 
@@ -67,9 +67,9 @@ For this next demo, we have an obstructed image. Bounding boxes were purposefull
 
 ## Real time-audio interactions
 
-By integrating the **gpt-4o-realtime-preview** model, users can interact with the platform using voice commands, making the shopping experience more engaging and accessible.
+By integrating the **gpt-4o-min-realtime-preview** model, users can interact with the platform using voice commands, making the shopping experience more engaging and accessible.
 
-1. Navigate back to **Playgrounds** and select **try Real-time audio playground** and set the deployment to **gpt-4o-realtime-preview**
+1. Navigate back to **Playgrounds** and select **try Audio playground** and set the deployment to **gpt-4o-min-realtime-preview**
 
 2. Update the **model instructions box** with the following:
 

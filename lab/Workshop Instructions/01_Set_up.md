@@ -96,7 +96,9 @@ Download the data on your machine from [this folder](https://github.com/microsof
         ![Select Azure AI Search Service](./Images/ai-foundry-select-search-service.png)
    - A new window will be opened, where you can select the Azure AI Search resource that you provisioned beforehand through the deployment template. 
         ![Add connection](./Images/ai-foundry-add-connection.png)
-   - In the **Search Settings** section, make sure that vectorization is enabled and select the default Azure OpenAI resource for your hub as embedding model.
+- Back to the previous window, the **Select Azure AI Search service** dropdown menu has been populated with the new connection. Select it and then click **Next**.
+        ![Confirm Search Service](./Images/aifoundry-confirm-search-service.png)
+   - In the **Search Settings** section, leave default configurations. Then confirm by clicking on **Create vector index**.
 
 ## Playgrounds
 
@@ -109,7 +111,7 @@ We will be doing most of our work in these Playgrounds, but namely in the follow
 1. **Real-time audio playground**
 1. **Agents playground**
 
-![Image of Azure AI Foundry Playgrounds](./Images/aifoundry-playgrounds.jpeg)
+![Image of Azure AI Foundry Playgrounds](./Images/aifoundry-playgrounds.png)
 
 ### Chat Playground
 
@@ -128,25 +130,27 @@ Within the playground section, navigate to the **Chat playground** and select **
 
 Navigate back to Playgrounds, select the **Image playground** and click **Try the Image Playground.** This option allows you to work with image generation
 
-![Image of Azure AI Foundry Playground Images Mode](./Images/aifoundry-image-playground.jpeg)
+![Image of Azure AI Foundry Playground Images Mode](./Images/aifoundry-image-playground.jpg)
 
 1. **Deployments**: In this drop-down we are able to choose the model to prompt for image generation. These models, just like the chat ones, come from our deployments.
 1. **Prompt Box**: Similar to the chat playground's box, this is where the models get their input from the user. In the case of images, descriptions of what we want to generate.
 1. **Results Box**: Finally, here is where the generated images are displayed.
 
-### Real-time audio playground
+### Audio playground
 
-Navigate back to Playgrounds, then select the **Real-time audio playground** and click **Try the Real-time audio Playground.** This feature allows you to engage with and test various AI models in an audio conversational format.
+Navigate back to Playgrounds, then select the **Audio playground** and click **Try the Audio Playground.** This feature allows you to engage with and test various AI models in an audio conversational format.
 
-![Image of Azure AI Foundry Playground Real time audio mode](./Images/aifoundry-real-time-audio.jpeg)
+![Image of Azure AI Foundry Playground Real time audio mode](./Images/aifoundry-real-time-audio.png)
 
 1. **Deployment**: This section allows us to change between our deployed models.
-1. **Server turn detection**: Determines if the server should utilize voice activity detection (VAD) to identify when a user has finished speaking.
 1. **System Message Box**: Here is where we enter instructions for the model, previous to the user interaction.
 1. **Choose a voice**: gpt-4o-realtime offers a variety of voices to choose from with unique accents or tonal capabilities tailored to your liking.
 1. **Server turn detection**: additional parameters to help optimize the model's efficiency and performance by improving voice activity detection.
 1. **Parameters**: This tab contains the models detailed settings, such as temperature and max response.
 1. **Prompt Button**: Similar to the chat playground's box, this is where the models get their input from the user. 
+
+> !NOTE
+> You need to click on **Enable microphone** to be able to use real-time audio as chat input.
 
 ## Agents playground
 
