@@ -2,7 +2,7 @@
 <img src="img/banner.jpg" alt="decorative banner" width="1200"/>
 </p>
 
-# Workshop - Interacting with Multimodal Models and Agents in Azure AI Foundry
+# LAB324 - Workshop - Interacting with Multimodal Models and Agents in Azure AI Foundry
 
 This repository hosts the Microsoft Build 2025 lab content for *Interacting with Multimodal Models and Agents in Azure AI Foundry*
 
