@@ -27,4 +27,4 @@ In this hands-on lab designed for developers who are getting started in their ge
 
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
-| Build session page | https://build.microsoft.com/sessions/SESSIONCODE | Event session page with downloadable recording, slides, resources, and speaker bio |
+| Build session page | https://build.microsoft.com/sessions/LAB324 | Event session page with downloadable recording, slides, resources, and speaker bio |
