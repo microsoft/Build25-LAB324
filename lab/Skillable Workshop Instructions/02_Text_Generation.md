@@ -211,7 +211,7 @@ To mitigate the risk of a similar behaviour, we can add an extra layer of mitiga
 6. Name your filter **sexual_content_filter** and select the suggested Azure OpenAI Service in the dropdown menu as the connection. Then select **Next**.
 7. Under **Input filter**, set the slider for **sexual** as **High** and add the **profanitySlang** blocklist you just created. Click **Next** and repeat the same for the output filter configuration.
    ![Customizing filter](./Images/custom-filter.png)
-8. Apply filter to the **gpt-4o-mini** model instance, by selecting it from the list of deployments. If popped out to confirm wether you want to replace the existing content filter, answer positevily. Click on **Replace** to confirm.
+8. Apply filter to the **gpt-4o-mini** model instance, by selecting it from the list of deployments. If popped out to confirm whether you want to replace the existing content filter, answer positevily. Click on **Replace** to confirm.
 9. Review and **Create content filter**.
 
 Navigate back to chat playground and repeat the question again. See the results and compare with the first one.
