@@ -1,4 +1,8 @@
-# Workshop - Interacting with Multimodal Models and Agents in Azure AI Foundry
+<p align="center">
+<img src="img/banner.jpg" alt="decorative banner" width="1200"/>
+</p>
+
+# LAB324 - Workshop - Interacting with Multimodal Models and Agents in Azure AI Foundry
 
 This repository hosts the Microsoft Build 2025 lab content for *Interacting with Multimodal Models and Agents in Azure AI Foundry*
 
@@ -19,4 +23,8 @@ In this hands-on lab designed for developers who are getting started in their ge
 ## Technology Used
 * Azure AI Foundry portal
 
+## Session Resources 
 
+| Resources          | Links                             | Description        |
+|:-------------------|:----------------------------------|:-------------------|
+| Build session page | https://build.microsoft.com/sessions/LAB324 | Event session page with downloadable recording, slides, resources, and speaker bio |
