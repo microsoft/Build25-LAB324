@@ -37,22 +37,20 @@ When building and interacting with an AI Agent in the Foundry Portal - as you ar
 
 ## Creating the Agent
 
-1. Under _Build and customize_ on the left navigation bar, select **Agents.** In the page that just opened up, click on the down arrow to select your Azure OpenAI Service resource then select the **Let's go** button.
+1. Under _Build and customize_ on the left navigation bar, select **Agents.** In the page that just opened up, click on the down arrow to select **gpt-4o-mini** model. Then click **Next**.
 
-![screenshot to select Aure OpenAI Service Resource](Images/agents-aoai-select.jpeg)
+![screenshot to select Aure OpenAI Service Resource](Images/agents-aoai-select.png)
 
-2. In the **Deployments** section, ensure you select **gpt-4o-mini** model. Then click **Next**.
-
-3. A new Agent will be created for you. Click on it, to be able to configure its properties. 
+2. A new Agent will be created for you. Click on it, to be able to configure its properties. 
 
     >[!TIP] 
     > **Ensure that you chose the correct deployment**. It should say **gpt-4o-mini** along with its version. 
 
-4. Next, let's name our Agent. Type the following in the Agent Name textbox:
+3. Next, let's name our Agent. Type the following in the Agent Name textbox:
 
     ```Contoso Outdoor Sales Agent```
 
-5. Next, we can provide the Agent with a set of **instructions**. Similar to the *System Message* we saw in previous sections, it provides the Agent with goals to follow. Copy the following instructions into the Instructions textbox.
+4. Next, we can provide the Agent with a set of **instructions**. Similar to the *System Message* we saw in previous sections, it provides the Agent with goals to follow. Copy the following instructions into the Instructions textbox.
 
     ``` 
     You are a sales Agent for Contoso Outdoor. You are polite, professional, helpful and friendly.

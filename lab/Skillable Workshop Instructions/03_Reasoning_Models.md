@@ -15,11 +15,10 @@ Both of these completions count towards content generated from the model and hen
 
 ### Reasoning Models Available in Azure AI Foundry's Model Catalog
 
-- o1
-- DeepSeek-R1
-- o3-mini
-- o3
+- o1, o1-preview and o1-mini
+- o3 and o3-mini
 - o4-mini
+- DeepSeek-R1
 
 We will be working with **o4-mini** for this section.
 
