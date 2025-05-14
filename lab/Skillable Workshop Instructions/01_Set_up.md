@@ -30,7 +30,8 @@ In this workshop we will be working on Azure AI Foundry portal, focusing especia
 
 2. Locate the +++@lab.CloudResourceTemplate(LAB324).Parameters[aiHubFriendlyName]+++ in the list of available hubs. **Click on the project** with the hub to access its settings and resources.
 
-![Hub management tab](./Images/aifoundry-hub-navigation.jpeg)
+![Hub management tab](./Images/aifoundry-hub-navigation.png)
+
 
 > [!NOTE]
 > For the sake of this workshop an AI project with its related assets has been created for you, so you can focus on usage. Here's a list of resources that have been pre-provisioned in the workshop environment:
@@ -62,7 +63,8 @@ You will notice the navigation bar has updated with new tabs, which represent fu
 We have two new sections:
 1.  The first section includes _Overview_ which provides a general overview of your project, _Model Catalog_ which showcases the available models inside Azure AI Foundry, _Playgrounds_ to interact with the models, and _AI Services_ where you can see a list of Azure AI Services available along with demos, use cases and more.
 1. **Build and Customize**: This includes useful opportunities to expand your project's reach, such as _working in Code_ by running a cloud compute, creating executable flows that link LLMs, prompts, and Python tools with _Prompt Flow_, and the ability to carry out _Fine Tuning_ on your deployments.
-1. **Assess and Improve:** this includes _Evaluation_ processes for your applications, _Tracing_ to debug your flows and _content filters_ to add guardrails to prompt inputs and completion outputs.
+1. **Assess and Improve**: This includes _Tracing_ to debug your flows and _Monitoring_ to track the performance of your apps in real time.
+1. **Protect and govern**: This includes _Evaluation_ processes for your applications, _content filters_ to add guardrails to prompt inputs and completion outputs and _governance_ facilities to ensure compliance with your organization policies.
 1. **My assets**: Here you can add additional elements to the project, with resources such as _Data_, _Indexes_, _Models and endpoints_ and _Web apps_ to be used as part of your work.
 1. **Management Center:** a location to manage all you  hub and project details and resources.
 
