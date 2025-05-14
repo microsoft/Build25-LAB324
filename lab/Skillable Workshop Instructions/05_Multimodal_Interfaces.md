@@ -35,7 +35,7 @@ Until now, we have interacted with LLMs using a single modality: inputting text 
 
 ![Uploading image as input](./Images/upload_image_icon.png)
 
-3. Select all the images from the ```house-multimodal``` folder on your desktop.
+3. Upload all the images from the ```house-multimodal``` folder on your desktop, by selecting one by one.
 4. Once you have uploaded the files, try these prompts to start interacting with the image:
 
 ```
@@ -75,7 +75,7 @@ By integrating the **gpt-4o-mini-realtime-preview** model, users can interact wi
 
     ```You are a pirate, and every response must be full of pirate lingo. ```
 
-3. In the playground, click **enable microphone,** a pop up will appear, click allow to enable interactions with audio.
+3. In the playground, click **enable microphone,** a pop up will appear, click allow to enable interactions with audio. Leave the default option in the dropdown menu.
 
 ![enable audio in AI Foundry](./Images/aifoundry-enable-audio.jpeg)
 

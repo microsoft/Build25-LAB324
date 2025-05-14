@@ -216,6 +216,9 @@ To mitigate the risk of a similar behaviour, we can add an extra layer of mitiga
 
 Navigate back to chat playground and repeat the question again. See the results and compare with the first one.
 
+ > !NOTE
+ > The expected behavior is getting an error message with 400 error code. 
+
 ## Next Steps
 
 Congratulations, you have completed the first part of the lab! You have learned how to use prompt engineering to generate text using a language model. In the next part you will learn how to use reasoning models for more complex problems.

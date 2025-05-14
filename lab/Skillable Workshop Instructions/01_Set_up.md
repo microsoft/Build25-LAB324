@@ -28,7 +28,7 @@ In this workshop we will be working on Azure AI Foundry portal, focusing especia
 
     Now that we are logged in, we can start navigating around the platform. 
 
-2. Locate the **Workshop AI Hub** in the list of available hubs. **Click on the project** with the hub to access its settings and resources.
+2. Locate the +++@lab.CloudResourceTemplate(LAB324).Parameters[aiHubFriendlyName]+++ in the list of available hubs. **Click on the project** with the hub to access its settings and resources.
 
 ![Hub management tab](./Images/aifoundry-hub-navigation.jpeg)
 
@@ -50,7 +50,8 @@ On this page, we can see an overview of our Azure AI Foundry portal Project. Thi
 - **Project Name and Description**: The name of the project and a short description of the Azure AI Foundry portal Project we are in.
 - **Project details**: A collection of various properties such as the Project's connection string, its location, resource group, etc. 
 - **Endpoints and keys**: Azure AI Foundry portal allows for multiple resources to be connected to it, expanding its features and functionality. Resources such as Azure OpenAI, Azure AI Search and Azure AI Services further enhance the capabilities of our Project, granting us access to deployments such as LLMs or functionalities such as vector search.  Here we can find useful information such as *API endpoints and keys* and documentation.
-- **Recent resources and tutorials**: Under this, your recent resources is highlighted with additional learning resources and tutorials to help you get started.
+- **Recent resources**: Once you deploy a model, connect data, or create any assets, they'll show up here, so you can always pick up where you left off.
+- **Tutorials and examples to help you get started**: In this section, you can find useful learning resources and tutorials to help you get started.
 
 ### Navigation Bar
 
@@ -59,15 +60,15 @@ You will notice the navigation bar has updated with new tabs, which represent fu
 ![project navigation bar](./Images/aifoundry-project-navigation.jpg)
 
 We have two new sections:
-1.  The first section includes _Playgrounds_ to interact with the models, _Overview_ which provides a general overview of your project, _Model Catalog_ which showcases the available models inside Azure AI Foundry, and _AI Services_ where you can see a list of Azure AI Services available along with demos, use cases and more.
-1. **Build and Customize**: This includes useful opportunities to expand your project's reach, such as _working in Code_ by running a cloud compute, access to _Prompt Flow_, and the ability to carry _Fine Tuning_ on your deployments.
+1.  The first section includes _Overview_ which provides a general overview of your project, _Model Catalog_ which showcases the available models inside Azure AI Foundry, _Playgrounds_ to interact with the models, and _AI Services_ where you can see a list of Azure AI Services available along with demos, use cases and more.
+1. **Build and Customize**: This includes useful opportunities to expand your project's reach, such as _working in Code_ by running a cloud compute, creating executable flows that link LLMs, prompts, and Python tools with _Prompt Flow_, and the ability to carry out _Fine Tuning_ on your deployments.
 1. **Assess and Improve:** this includes _Evaluation_ processes for your applications, _Tracing_ to debug your flows and _content filters_ to add guardrails to prompt inputs and completion outputs.
 1. **My assets**: Here you can add additional elements to the project, with resources such as _Data_, _Indexes_, _Models and endpoints_ and _Web apps_ to be used as part of your work.
 1. **Management Center:** a location to manage all you  hub and project details and resources.
 
 ## Data and indexes
 
-In this lab we are going to provide models access to a set of private data, to test its capabilities to ground responses on it. In this step, let's add this data in our Azure AI project. 
+In this lab we are going to provide models access to a set of private data, to test their ability to ground responses. In this step, let's add this data in our Azure AI project. 
 
 1. Navigate to **Data + Indexes**
 2. Select, **New data,** and select **Upload files/folders** as **Data source**
@@ -80,7 +81,7 @@ In this lab we are going to provide models access to a set of private data, to t
    - Click on the **+ New index** button.
    - Select **Data in Azure AI Foundry** as the data source and then the data source you just uploaded.
         ![Create Vector Index](./Images/ai-foundry-create-index.png)
-   - In the **Index Settings** section, change the default name of your index to **products-catalog**. 
+   - In the **Index Configuration** section, change the default name of your Vector index to **products-catalog**. 
    - Open the dropdown menu for the Azure AI Search Service selection and then click on **Connect other Azure AI Search resource**.
         ![Select Azure AI Search Service](./Images/ai-foundry-select-search-service.png)
    - A new window will be opened, where you can select the Azure AI Search resource that has been pre-provisioned for you. 
@@ -163,7 +164,5 @@ Once you _create your first Agent_ you will see the UI components as follows:
 
 ## Ready to start
 
-That covers the necessary setup and basics of Azure AI Foundry portal . We will now move forward to begin interacting with the models. 
-
-- Navigate to the  **playgrounds** select the **Chat playground** and click **Try the Chat Playground.**  
-- Click **Next** to proceed to the Text Generation section.
+That covers the necessary setup and basics of Azure AI Foundry portal. We will now move forward to begin interacting with the models. 
+Click **Next** to proceed to the Text Generation section.
