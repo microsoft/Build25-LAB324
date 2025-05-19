@@ -17,7 +17,8 @@ Agents can also access multiple tools in parallel, if needed. Some of these tool
 - **Code Interpreter**
 - **File Search**
 - **Grounding with Bing Search**
-- **Azure Functions** and more..
+- **Azure Functions**
+- ... and more.
 
 In this section, we will be covering Code Interpreter.
 
@@ -37,20 +38,22 @@ When building and interacting with an AI Agent in the Foundry Portal - as you ar
 
 ## Creating the Agent
 
-1. Under _Build and customize_ on the left navigation bar, select **Agents.** In the page that just opened up, click on the down arrow to select **gpt-4o-mini** model. Then click **Next**.
+1. Under _Build and customize_ on the left navigation bar, select **Agents.**
+  
+1. If this is your first time trying the Agents playground, a page titled "Select or Deploy a model" will appear. Click on the down arrow to select **gpt-4o-mini** model. Then click **Next**.
 
 ![screenshot to select Aure OpenAI Service Resource](Images/agents-aoai-select.png)
 
-2. A new Agent will be created for you. Click on it, to be able to configure its properties. 
+1. A new Agent will be created for you. Click on it, to be able to configure its properties. 
 
     >[!TIP] 
     > **Ensure that you chose the correct deployment**. It should say **gpt-4o-mini** along with its version. 
 
-3. Next, let's name our Agent. Type the following in the Agent Name textbox:
+1. Next, let's name our Agent. Type the following in the Agent Name textbox:
 
     ```Contoso Outdoor Sales Agent```
 
-4. Next, we can provide the Agent with a set of **instructions**. Similar to the *System Message* we saw in previous sections, it provides the Agent with goals to follow. Copy the following instructions into the Instructions textbox.
+1. Next, we can provide the Agent with a set of **instructions**. Similar to the *System Message* we saw in previous sections, it provides the Agent with goals to follow. Copy the following instructions into the Instructions textbox.
 
     ``` 
     You are a sales Agent for Contoso Outdoor. You are polite, professional, helpful and friendly.
@@ -67,19 +70,19 @@ When building and interacting with an AI Agent in the Foundry Portal - as you ar
     >[!NOTE]
     >How many prompt engineering techniques from the previous sections are you able to identify in this prompt? For clues, check Part 2 of the workshop.
 
-4. Navigate to the **Actions** tab, and click **add.** 
+1. Scroll down to the **Actions** section, and click **Add**.
 
     ![Agent attach new file](Images/agents-actions.jpeg)
 
-5. A new tab where you will select **Code interpreter**.
+1. In the new tab that appears, click **Code interpreter**.
 
-6. On the next window, click on **select local files** and select the `Contoso_Sales_Revenue.csv` file on your Desktop.
+1. On the next window, click on **select local files** and select the `Contoso_Sales_Revenue.csv` file on your Desktop.
     ![Agents code interpreter](Images/aifoundry-codeinterpreter-upload-file.jpeg)
 
     >[!NOTE]
     > If you cannot find the file on your desktop, you can download it from [here](https://github.com/microsoft/aitour-interact-with-llms/tree/main/lab/Skillable%20Workshop%20Instructions/assets).
 
-7. Click on the **upload and add** button. You should now see the file under the *Code Interpreter* tool.
+1. Click on the **Upload and save** button. You should now see the file under the *Code Interpreter* tool.
 
 The Agent is now ready for us to interact with it.
 
