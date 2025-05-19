@@ -12,23 +12,19 @@ As a first step, login into the lab Virtual Machine using the following credenti
 >  First time using **Skillable?** The green "T" (e.g., +++Admin+++) indicates values that are automatically input for you at the current cursor location in VM, with one click. This reduces your effort and minimizes input errors.
 > Also, you can always click on the images to enlarge them, if needed.
 
-## Sign in to Azure AI Foundry portal
+## Sign in to Azure portal
    
 In this workshop we will be working on Azure AI Foundry portal, focusing especially on the playground feature. 
 
-1. On the Desktop, click on **Microsoft Edge** browser. You'll get a browser tab with the Azure AI Foundry portal homepage as shown in the following image.
-
-![Homepage of Azure AI Foundry](./Images/aifoundry-homepage.jpeg)
-
-## Navigating Azure AI Foundry portal
-
-1. Start by clicking **Sign In**, you can find the sign in link in the top right of the window, and enter the following credentials when prompted for the login credentials:
+1. On the Desktop, click on **Microsoft Edge** browser. In a new tab, navigate to the Azure Portal at +++https://portal.azure.com/#browse/resourcegroups+++ and sign in with the following credentials:
     -  Email: +++@lab.CloudPortalCredential(User1).Username+++
     -  Password: +++@lab.CloudPortalCredential(User1).Password+++
 
-    Now that we are logged in, we can start navigating around the platform. 
+## Launch and navigate Azure AI Foundry portal
 
-2. Locate the +++@lab.CloudResourceTemplate(LAB324).Parameters[aiHubFriendlyName]+++ in the list of available hubs. **Click on the project** with the hub to access its settings and resources.
+1. Now that we are logged in, click on the resource group name **RG1**. 
+
+2. Locate the +++@lab.CloudResourceTemplate(LAB324).Parameters[aiHubFriendlyName]+++ of type **Azure AI Project** in the list of available resources. Click on **Launch studio** to access its settings and resources.
 
 ![Hub management tab](./Images/aifoundry-hub-navigation.png)
 
