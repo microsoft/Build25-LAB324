@@ -42,7 +42,7 @@ When building and interacting with an AI Agent in the Foundry Portal - as you ar
   
 1. If this is your first time trying the Agents playground, a page titled "Select or Deploy a model" will appear. Click on the down arrow to select **gpt-4o-mini** model. Then click **Next**.
 
-![screenshot to select Aure OpenAI Service Resource](Images/agents-aoai-select.png)
+![screenshot to select Aure OpenAI Service Resource](Images/agents-aoai-select.jpeg)
 
 1. A new Agent will be created for you. Click on it, to be able to configure its properties. 
 
