@@ -16,15 +16,26 @@ As a first step, login into the lab Virtual Machine using the following credenti
    
 In this workshop we will be working on Azure AI Foundry portal, focusing especially on the playground feature. 
 
-1. On the Desktop, click on **Microsoft Edge** browser. In a new tab, navigate to the Azure Portal at +++https://portal.azure.com/#browse/resourcegroups+++ and sign in with the following credentials:
+1. On the Desktop, click on **Microsoft Edge** browser. You'll get a browser tab with the Azure AI Foundry portal homepage as shown in the following image.
+
+![Homepage of Azure AI Foundry](./Images/aifoundry-homepage.png)
+
+## Navigating Azure AI Foundry portal
+
+1. Start by clicking **Sign In**, you can find the sign in link in the top right of the window, and enter the following credentials when prompted for the login credentials:
     -  Email: +++@lab.CloudPortalCredential(User1).Username+++
     -  Password: +++@lab.CloudPortalCredential(User1).Password+++
 
 ## Launch and navigate Azure AI Foundry portal
 
-1. Now that we are logged in, click on the resource group name **RG1**. 
+2. Next, let's take a look at the resources we will be working with. Type in +++@lab.CloudResourceTemplate(LAB324).Parameters[https://ai.azure.com/AllResources]+++ at the navigation bar to visit the resources page.
 
-2. Locate the +++@lab.CloudResourceTemplate(LAB324).Parameters[aiHubFriendlyName]+++ of type **Azure AI Project** in the list of available resources. Click on **Launch studio** to access its settings and resources.
+![Welcome Page](./Images/aifoundry-welcomepage.png)
+
+
+3. Locate the resource of **Type** +++@lab.CloudResourceTemplate(LAB324).Parameters[Project]+++ in the list of available resources. **Click on its Name** to access its settings.
+
+![Hub management tab](./Images/aifoundry-allresources.png)
 
 > [!NOTE]
 > For the sake of this workshop an AI project with its related assets has been created for you, so you can focus on usage. Here's a list of resources that have been pre-provisioned in the workshop environment:
