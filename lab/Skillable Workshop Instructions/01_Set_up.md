@@ -28,12 +28,12 @@ In this workshop we will be working on Azure AI Foundry portal, focusing especia
 
     Now that we are logged in, we can start navigating around the platform. 
 
-2. Next, let's take a look at the resources we will be working with. Type in +++@lab.CloudResourceTemplate(LAB324).Parameters[https://ai.azure.com/AllResources]+++ at the navigation bar to visit the resources page.
+2. Next, let's take a look at the resources we will be working with. Type in +++https://ai.azure.com/AllResources+++ at the navigation bar to visit the resources page.
 
 ![Welcome Page](./Images/aifoundry-welcomepage.png)
 
 
-3. Locate the resource of **Type** +++@lab.CloudResourceTemplate(LAB324).Parameters[Project]+++ in the list of available resources. **Click on its Name** to access its settings.
+3. Locate the resource of Type **Project** in the list of available resources. **Click on its Name** to access its settings.
 
 ![Hub management tab](./Images/aifoundry-allresources.png)
 
