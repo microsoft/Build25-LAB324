@@ -26,9 +26,6 @@ In this workshop we will be working on Azure AI Foundry portal, focusing especia
 
 2. Locate the +++@lab.CloudResourceTemplate(LAB324).Parameters[aiHubFriendlyName]+++ of type **Azure AI Project** in the list of available resources. Click on **Launch studio** to access its settings and resources.
 
-![Hub management tab](./Images/aifoundry-hub-navigation.png)
-
-
 > [!NOTE]
 > For the sake of this workshop an AI project with its related assets has been created for you, so you can focus on usage. Here's a list of resources that have been pre-provisioned in the workshop environment:
 > - Azure AI Hub, which is your workspace in Azure AI Foundry and a container of projects. it comes with an Azure Key Vault and an Azure Storage 
