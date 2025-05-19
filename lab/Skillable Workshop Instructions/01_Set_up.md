@@ -94,13 +94,13 @@ Move to the next section as your data is being uploaded.
 
 ## Playgrounds
 
-You will notice we have different options for our **Playground**. Each option represents a different approach to interacting and using AI models, which can be tailored to our specific needs.
+Click on **Playgrounds** in the left navigation. You will notice we have different options for our **Playground**. Each option represents a different approach to interacting and using AI models, which can be tailored to our specific needs.
 
 We will be doing most of our work in these Playgrounds, but namely in the following:
 
 1. **Chat Playground**
 1. **Images Playground**
-1. **Real-time audio playground**
+1. **Audio playground**
 1. **Agents playground**
 
 ![Image of Azure AI Foundry Playgrounds](./Images/aifoundry-playgrounds.png)
