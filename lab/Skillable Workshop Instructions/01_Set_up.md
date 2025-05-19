@@ -88,7 +88,7 @@ In this lab we are going to provide models access to a set of private data, to t
         ![Add connection](./Images/ai-foundry-add-connection.png)
    - Back to the previous window, the **Select Azure AI Search service** dropdown menu has been populated with the new connection. Select it and then click **Next**.
         ![Confirm Search Service](./Images/aifoundry-confirm-search-service.png)
-   - In the **Search Settings** section, leave default configurations. Then confirm by clicking on **Create vector index**.
+   - In the **Search Settings** section, leave default configurations. Confirm by clicking on **Next**, and then click **Create vector index**.
 
 Move to the next section as your data is being uploaded.
 
