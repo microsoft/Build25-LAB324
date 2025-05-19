@@ -18,7 +18,7 @@ In this workshop we will be working on Azure AI Foundry portal, focusing especia
 
 1. On the Desktop, click on **Microsoft Edge** browser. You'll get a browser tab with the Azure AI Foundry portal homepage as shown in the following image.
 
-![Homepage of Azure AI Foundry](./Images/aifoundry-homepage.jpeg)
+![Homepage of Azure AI Foundry](./Images/aifoundry-homepage.png)
 
 ## Navigating Azure AI Foundry portal
 
@@ -28,9 +28,14 @@ In this workshop we will be working on Azure AI Foundry portal, focusing especia
 
     Now that we are logged in, we can start navigating around the platform. 
 
-2. Locate the +++@lab.CloudResourceTemplate(LAB324).Parameters[aiHubFriendlyName]+++ in the list of available hubs. **Click on the project** with the hub to access its settings and resources.
+2. Next, let's take a look at the resources we will be working with. Type in +++@lab.CloudResourceTemplate(LAB324).Parameters[https://ai.azure.com/AllResources]+++ at the navigation bar to visit the resources page.
 
-![Hub management tab](./Images/aifoundry-hub-navigation.png)
+![Welcome Page](./Images/aifoundry-welcomepage.png)
+
+
+3. Locate the resource of **Type** +++@lab.CloudResourceTemplate(LAB324).Parameters[Project]+++ in the list of available resources. **Click on its Name** to access its settings.
+
+![Hub management tab](./Images/aifoundry-allresources.png)
 
 > [!NOTE]
 > For the sake of this workshop an AI project with its related assets has been created for you, so you can focus on usage. Here's a list of resources that have been pre-provisioned in the workshop environment:
