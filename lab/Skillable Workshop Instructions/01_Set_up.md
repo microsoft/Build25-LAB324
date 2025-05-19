@@ -115,12 +115,12 @@ Within the playground section, navigate to the **Chat playground** and select **
 1. **System Message Box**: Here is where we enter instructions for the model, previous to the user interaction.
 1. **Add your data**: Azure AI Foundry portal supports providing the deployed models with external data, allowing for better search and context.
 1. **Parameters**: This tab contains the models detailed settings, such as temperature.
-1. **Chat Box**: The chat box is where we will see our interactions with the model in the form of chat messages.
-1. **Prompt Box**: This is where we type the prompts we want to send to the model.
+1. **Chat history**: The chat box is where we will see our interactions with the model in the form of chat messages.
+1. **Prompt Box**: This is where we type the user queries ("prompts") we want to send to the model.
 
 ### Images Playground
 
-Navigate back to Playgrounds, select the **Image playground** and click **Try the Image Playground.** This option allows you to work with image generation
+Navigate back to Playgrounds, select the **Images playground** and click **Try the Image Playground.** This option allows you to work with image generation
 
 ![Image of Azure AI Foundry Playground Images Mode](./Images/aifoundry-image-playground.jpg)
 
@@ -141,12 +141,14 @@ Navigate back to Playgrounds, then select the **Audio playground** and click **T
 1. **Parameters**: This tab contains the models detailed settings, such as temperature and max response.
 1. **Prompt Button**: Similar to the chat playground's box, this is where the models get their input from the user. 
 
-> !NOTE
+> NOTE:
 > You need to click on **Enable microphone** to be able to use real-time audio as chat input.
 
 ## Agents playground
 
-In the Navigation bar, select **Agents**. This feature provides you with the tools to build, test, and customize AI-driven agents.
+In the Navigation bar, select **Agents**. Select the dropdown under **Select an Azure OpenAI resource** and choose the Hub resource provided for you. Then click "Let's go".
+
+This feature provides you with the tools to build, test, and customize AI-driven agents.
 
 ![Image of Azure AI Foundry Playground Agents Mode](./Images/agents-playground-pt1.jpeg)
 
