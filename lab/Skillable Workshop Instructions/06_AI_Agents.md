@@ -37,11 +37,13 @@ When building and interacting with an AI Agent in the Foundry Portal - as you ar
 
 ## Creating the Agent
 
-1. Under _Build and customize_ on the left navigation bar, select **Agents.** In the page that just opened up, click on the down arrow to select **gpt-4o-mini** model. Then click **Next**.
+1. Under _Build and customize_ on the left navigation bar, select **Agents.** In the page that just opened up, click on the down arrow to select your Azure OpenAI Service resource then select the **Let's go** button.
 
-![screenshot to select Aure OpenAI Service Resource](Images/agents-aoai-select.png)
+![screenshot to select Aure OpenAI Service Resource](Images/agents-aoai-select.jpeg)
 
-2. A new Agent will be created for you. Click on it, to be able to configure its properties. 
+2. In the **Deployments** section, ensure you select **gpt-4o-mini** model. Then click **Next**.
+
+3. A new Agent will be created for you. Click on it, to be able to configure its properties. 
 
     >[!TIP] 
     > **Ensure that you chose the correct deployment**. It should say **gpt-4o-mini** along with its version. 
