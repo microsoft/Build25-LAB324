@@ -12,7 +12,7 @@ As a first step, login into the lab Virtual Machine using the following credenti
 >  First time using **Skillable?** The green "T" (e.g., +++Admin+++) indicates values that are automatically input for you at the current cursor location in VM, with one click. This reduces your effort and minimizes input errors.
 > Also, you can always click on the images to enlarge them, if needed.
 
-## Sign in to Azure portal
+## Sign in to Azure AI Foundry portal
    
 In this workshop we will be working on Azure AI Foundry portal, focusing especially on the playground feature. 
 
@@ -26,7 +26,7 @@ In this workshop we will be working on Azure AI Foundry portal, focusing especia
     -  Email: +++@lab.CloudPortalCredential(User1).Username+++
     -  Password: +++@lab.CloudPortalCredential(User1).Password+++
 
-## Launch and navigate Azure AI Foundry portal
+    Now that we are logged in, we can start navigating around the platform. 
 
 2. Next, let's take a look at the resources we will be working with. Type in +++@lab.CloudResourceTemplate(LAB324).Parameters[https://ai.azure.com/AllResources]+++ at the navigation bar to visit the resources page.
 
