@@ -126,7 +126,7 @@ The 3D Animated Office Space Design is intended for use by architects, interior 
 Beyond its aesthetic appeal, the 3D Animated Office Space Design is designed with functionality in mind. It includes ample storage solutions, acoustic panels to reduce noise, and modular furniture that can be rearranged to suit different needs. The green walls and potted plants throughout the office create a refreshing environment that promotes creativity and reduces stress. The design is presented in a high-quality 3D animation, providing a realistic walkthrough that allows clients to visualize the space effectively.
 ```
 
-2. Once you get the response, click on the three dots below the response and seelct **Copy response to clipboard**.
+2. Once you get the response, click on the three dots below the response and select **Copy response to clipboard**.
 
 ![Image of copying option](./Images/ai-foundry-copy-response.png)
 
