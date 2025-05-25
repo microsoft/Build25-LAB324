@@ -26,7 +26,9 @@ We will be working with **o4-mini** for this section.
 
 1. Navigate to the  **playgrounds** section and select **Try the Chat Playground**
 
->[!alert] Before you start, click on **Clear Chat** to avoid any context from previous interactions.
+>[!alert] Before you start, click on **Clear Chat** to avoid any context from previous interactions. Also, expand the "Add your data" section to check you don't have any data connections to the chat. Use the **Remove data source** button, if needed.
+
+![Remove data source](./Images/chat-playground-remove-data-sources.png)
 
 
 2. Select **o4-mini** under the Deployment section.

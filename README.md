@@ -30,3 +30,6 @@ In this hands-on lab designed for developers who are getting started in their ge
 | Build session page | https://build.microsoft.com/sessions/LAB324 | Event session page with downloadable recording, slides, resources, and speaker bio |
 |Microsoft Learn|https://aka.ms/build25/plan/BestModelGenAISolution|Official Collection or Plan with skilling resources to learn at your own pace|
 
+## Important Info
+The instruction included in this repo are designed for users going through the lab in a provided Skillable environment, which is the MS Build lab attendees experience. For a self-guided learner experience please visit [azure-ai-foundry/ai-tutorials](https://github.com/azure-ai-foundry/ai-tutorials).
+

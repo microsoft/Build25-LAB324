@@ -67,7 +67,7 @@ You will notice the navigation bar has updated with new tabs, which represent fu
 We have two new sections:
 1.  The first section includes _Overview_ which provides a general overview of your project, _Model Catalog_ which showcases the available models inside Azure AI Foundry, _Playgrounds_ to interact with the models, and _AI Services_ where you can see a list of Azure AI Services available along with demos, use cases and more.
 1. **Build and Customize**: This includes useful opportunities to expand your project's reach, such as _working in Code_ by running a cloud compute, creating executable flows that link LLMs, prompts, and Python tools with _Prompt Flow_, and the ability to carry out _Fine Tuning_ on your deployments.
-1. **Observe and Improve:** this includes _Evaluation_ processes for your applications, _Tracing_ to debug your flows and _content filters_ to add guardrails to prompt inputs and completion outputs.
+1. **Observe and Optimize:** this includes _Tracing_ to debug your flows and _content filters_ to add guardrails to prompt inputs and completion outputs.
 1. **Protect and govern**: This includes _Evaluation_ processes for your applications, _content filters_ to add guardrails to prompt inputs and completion outputs and _governance_ facilities to ensure compliance with your organization policies.
 1. **My assets**: Here you can add additional elements to the project, with resources such as _Data_, _Indexes_, _Models and endpoints_ and _Web apps_ to be used as part of your work.
 1. **Management Center:** a location to manage all you  hub and project details and resources.
@@ -118,7 +118,7 @@ Within the playground section, navigate to the **Chat playground** and select **
 ![Image of Azure AI Foundry Playground Chat Mode](./Images/aifoundry-chat-playground.jpeg)
 
 1. **Deployment**: This section allows us to change between our deployed models.
-1. **System Message Box**: Here is where we enter instructions for the model, previous to the user interaction.
+1. **Give the model instructions and context**: This is the system message box, where we enter instructions for the model, previous to the user interaction.
 1. **Add your data**: Azure AI Foundry portal supports providing the deployed models with external data, allowing for better search and context.
 1. **Parameters**: This tab contains the models detailed settings, such as temperature.
 1. **Chat history**: The chat box is where we will see our interactions with the model in the form of chat messages.
@@ -141,7 +141,7 @@ Navigate back to Playgrounds, then select the **Audio playground** and click **T
 ![Image of Azure AI Foundry Playground Real time audio mode](./Images/aifoundry-real-time-audio.png)
 
 1. **Deployment**: This section allows us to change between our deployed models.
-1. **System Message Box**: Here is where we enter instructions for the model, previous to the user interaction.
+1. **Give the model instructions and context**: Here is where we enter instructions for the model, previous to the user interaction.
 1. **Choose a voice**: gpt-4o-realtime offers a variety of voices to choose from with unique accents or tonal capabilities tailored to your liking.
 1. **Server turn detection**: additional parameters to help optimize the model's efficiency and performance by improving voice activity detection.
 1. **Parameters**: This tab contains the models detailed settings, such as temperature and max response.
